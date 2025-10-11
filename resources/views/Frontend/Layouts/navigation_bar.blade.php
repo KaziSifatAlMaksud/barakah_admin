@@ -1,0 +1,167 @@
+     <!-- Topbar Start -->
+    
+     <div
+      class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block"
+    >
+      <div class="container">
+        <div class="row gx-0 align-items-center">
+          <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+            <div class="d-flex flex-wrap">
+              <div class="border-end border-primary pe-3">
+                <a href="https://www.google.com/maps/place/Flat+3A,+House+13,+1209+Road+No.+13%2FA,+Dhaka+1209/@23.7497504,90.3727205,17z/data=!3m1!4b1!4m5!3m4!1s0x3755bf4d74140001:0x9b2ab207b852687d!8m2!3d23.7497504!4d90.3727205?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-muted small"
+                  ><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A
+                  Location</a
+                >
+              </div>
+              <div class="ps-3">
+                <a href="mailto:info@bsatbd.com" class="text-muted small"
+                  ><i class="fas fa-envelope text-primary me-2"></i
+                  >info@bsatbd.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-flex justify-content-end">
+              <div class="d-flex border-end border-primary pe-3">
+                <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/profile.php?id=61572919227052"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+       
+                <a class="btn p-0 text-primary me-3" href="https://www.instagram.com/bsat.bd/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/company/bsatbd"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+              <div class="dropdown ms-3">
+                <a
+                  href="#"
+                  class="dropdown-toggle text-dark"
+                  data-bs-toggle="dropdown"
+                  ><small
+                    ><i class="fas fa-globe-europe text-primary me-2"></i>
+                    English</small
+                  ></a
+                >
+                <!-- <div class="dropdown-menu rounded">
+                  <a href="#" class="dropdown-item">English</a>
+                  <a href="#" class="dropdown-item">Bangla</a>
+                  <a href="#" class="dropdown-item">French</a>
+                  <a href="#" class="dropdown-item">Spanish</a>
+                  <a href="#" class="dropdown-item">Arabic</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="#" class="navbar-brand p-0">
+            <img src="img/logo/Barakah-Logo.png" alt="Logo" height="150" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-0 mx-lg-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>      
+               
+              <div class="nav-item dropdown ">
+                  <!-- Main link clickable -->
+                  <a href="destinations.html" class="nav-link ">
+                      Destinations
+                  </a>
+
+                  <!-- Dropdown toggle -->
+                  <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                      <li><a href="destinations/3.1.StudyInUSA.html" class="dropdown-item">Study in USA</a></li>
+                      <li><a href="destinations/3.2.StudyinUK.html" class="dropdown-item">Study in UK</a></li>
+                      <li><a href="destinations/3.3.studyInCanada.html" class="dropdown-item">Study in Canada</a></li>
+                      <li><a href="destinations/3.4.StudyInEurope.html" class="dropdown-item">Study in Europe</a></li>
+                  </ul>
+              </div>
+
+              <div class="nav-item dropdown">
+                  <!-- Main link clickable -->
+                  <a href="service.html" class="nav-link">
+                      Services
+                  </a>
+
+                  <!-- Dropdown toggle -->
+                  <a href="#" class="nav-link dropdown-toggle" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+                  <!-- Dropdown menu -->
+                  <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                      <li><a href="services/01.service-admission_support.html" class="dropdown-item">Admission Support</a></li>
+                      <li><a href="services/02.service-visa_assistance.html" class="dropdown-item">Visa Assistance</a></li>
+                      <li><a href="services/03.health_life_sciences.html" class="dropdown-item">Health Insurance Assistance</a></li>
+                      <li><a href="services/05.service_scholarships.html" class="dropdown-item">Scholarships & Financial Planning</a></li>
+                     <li><a href="services/07.service_travel_support.html" class="dropdown-item">Travel Support</a></li>
+                      <li><a href="services/06.service_postarrival.html" class="dropdown-item">Pre-Departure & Post-Arrival Support</a></li>
+                      <li><a href="services/08.service_air_tickering.html" class="dropdown-item">Air Ticketing</a></li>
+                  </ul>
+              </div>
+
+              
+              <div class="nav-item dropdown">
+                  <!-- Main link clickable -->
+                  <a href="courses.html" class="nav-link">
+                      Courses
+                  </a>
+
+                  <!-- Dropdown toggle -->
+                  <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+                    <!-- Dropdown menu -->
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                      <li><a href="courses/6.1.businessandManagement.html" class="dropdown-item">Business Management</a></li>
+                      <li><a href="courses/6.2.engineeringAndTechnology.html" class="dropdown-item">Engineering Technology</a></li>
+                      <li><a href="courses/6.3.healthLifeScience.html" class="dropdown-item">Health & Life Sciences</a></li>
+                      <li><a href="courses/6.4.artsHumanities.html" class="dropdown-item">Arts Humanities Social Sciences</a></li>
+                      <li><a href="courses/6.7.LawAndCriminology.html" class="dropdown-item">Law & Criminology</a></li>
+                      <li><a href="courses/6.8.EducationAndTeaching.html" class="dropdown-item">Education & Technology</a></li>
+                  </ul>
+              </div>
+
+
+
+           
+               <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
+             
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <div class="nav-btn px-3">
+                <button
+                  class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#searchModal"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+                <a
+                  href="apply_form.html"
+                  class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"
+                >
+                  Apply with Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->

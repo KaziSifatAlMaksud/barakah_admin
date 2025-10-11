@@ -24,11 +24,19 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 });
 
 
-Route::get('/contact', function() {
-    return view('Frontend.pages.contact');
-})->name('contact');
 
-Route::post('/contact', [ContactUsController::class, 'store'])->name('frontend.contact.store');
+    //Post Contact Form
+    Route::post('/contact', [ContactUsController::class, 'store'])->name('frontend.contact.store');
+
+
+    Route::get('/home', function() { return view('Frontend.pages.home');})->name('home');
+    Route::get('/about', function() { return view('Frontend.pages.about');})->name('about');
+    Route::get('/destinations', function() { return view('Frontend.pages.destinations');})->name('destinations');
+    Route::get('/services', function() { return view('Frontend.pages.services');})->name('services');
+    Route::get('/courses', function() { return view('Frontend.pages.courses');})->name('courses');
+    Route::get('/contact', function() { return view('Frontend.pages.contact');})->name('contact');
+
+
 
 
 
