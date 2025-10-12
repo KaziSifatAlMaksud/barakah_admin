@@ -3,13 +3,8 @@
 @include('Admin.layouts.sidebar')
 @include('Admin.layouts.header')
 
-
 @section('content')
-
  <div class="container-fluid">
-
-                  
-        
               <div class="card">
                 <div class="card-body">
                   <div class="d-md-flex align-items-center">
@@ -17,7 +12,7 @@
                       <h4 class="card-title">Products Performance</h4>
                       <p class="card-subtitle">
                         Ample Admin Vs Pixel Admin
-                          {{ $contacts->count() }} Contacts
+                          {{ $countries->count() }} Contacts
                       </p>
                     </div>
                     <div class="ms-auto mt-3 mt-md-0">
