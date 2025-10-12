@@ -13,44 +13,52 @@ class DestinationController extends Controller
         return view('Admin.pages.country', compact('countries'));
     }
 
-   public function country_store(Request $request)
+    public function country_store(Request $request)
     {
         $validated = $request->validate([
             'name'       => 'required|string',
             'short_form' => 'required|string|max:10',
             'region'     => 'nullable|string',
             'currency'   => 'nullable|string',
-            'flag_icon'  => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // validate file
-            'bg_img'     => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096', // validate file
+            'flag_icon'  => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'bg_img'     => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
             'status'     => 'nullable|boolean',
         ]);
 
-       // Handle flag icon upload
+        // Upload files if available
         if ($request->hasFile('flag_icon')) {
             $flagPath = $request->file('flag_icon')->store('country_flags', 'public');
-            $validated['flag_icon'] = $flagPath; // e.g. "country_flags/flag.png"
+            $validated['flag_icon'] = $flagPath;
         }
 
-        // Handle background image upload
         if ($request->hasFile('bg_img')) {
             $bgPath = $request->file('bg_img')->store('country_bg', 'public');
-            $validated['bg_img'] = $bgPath; // e.g. "country_bg/bg.png"
+            $validated['bg_img'] = $bgPath;
         }
 
-        // Create country
-        $country = Country::create($validated);
+        // Check if ALL fields are filled (including optional)
+        $isAllFilled = 
+            !empty($validated['region'] ?? null) &&
+            !empty($validated['currency'] ?? null) &&
+            !empty($validated['flag_icon'] ?? null) &&
+            !empty($validated['bg_img'] ?? null); // boolean can be false, so use isset
 
-        // Get updated country list
-        $countries = Country::orderBy('name', 'asc')->get();
+        if ($isAllFilled) {
+            $country = Country::create($validated);
+            session()->flash('success', 'Country created successfully!');
+        } else {
+            session()->flash('error', 'All fields must be filled to create a country.');
+            $country = null;
+        }
 
-       return view('Admin.pages.country', [
+        $countries = Country::orderBy('id', 'asc')->get();
+
+        return view('Admin.pages.country', [
             'countries' => $countries,
-            'new_country' => $country,
-            'success' => 'Country created successfully!',
+            'new_country' => $country
         ]);
-
- 
     }
+
 
 
     public function show($id)
