@@ -65,7 +65,8 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="#" class="navbar-brand p-0">
-            <img src="img/logo/Barakah-Logo.png" alt="Logo" height="150" />
+            <img src="{{ asset('assets/img/logo/Barakah-Logo.png') }}" alt="Logo" height="150" />
+
           </a>
           <button
             class="navbar-toggler"
@@ -77,12 +78,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>      
+              <a href="{{ url('home') }}" class="nav-item nav-link active">Home</a>
+              <a href="{{ url('about') }}" class="nav-item nav-link">About</a>
                
               <div class="nav-item dropdown ">
                   <!-- Main link clickable -->
-                  <a href="destinations.html" class="nav-link ">
+                  <a href="{{ url('destinations') }}" class="nav-link ">
                       Destinations
                   </a>
 
@@ -98,7 +99,7 @@
 
               <div class="nav-item dropdown">
                   <!-- Main link clickable -->
-                  <a href="service.html" class="nav-link">
+                  <a href="{{ url('services') }}" class="nav-link">
                       Services
                   </a>
 
@@ -120,7 +121,7 @@
               
               <div class="nav-item dropdown">
                   <!-- Main link clickable -->
-                  <a href="courses.html" class="nav-link">
+                  <a href="{{ url('courses') }}" class="nav-link">
                       Courses
                   </a>
 
@@ -143,7 +144,7 @@
            
                <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
              
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <a href="{{ route('contact')  }}" class="nav-item nav-link">Contact</a>
               <div class="nav-btn px-3">
                 <button
                   class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0"

@@ -10,7 +10,7 @@
                     <a href="index.html" class="p-0">
                       <!-- <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3> -->
                       <img
-                        src="img/logo/footer-logo.png"
+                        src="{{ asset('assets/img/logo/footer-logo.png') }}"
                         alt="Logo"
                         height="100"
                       />
