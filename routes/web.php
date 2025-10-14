@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\SuccessStoryController;
-
+use App\Http\Controllers\BannerController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -34,6 +34,16 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/success_stories/{id}', [SuccessStoryController::class, 'show'])->name('admin.success_stories.show');
     Route::post('/success_stories', [SuccessStoryController::class, 'store'])->name('admin.success_stories.store');
     Route::delete('/success_stories/{id}', [SuccessStoryController::class, 'destroy'])->name('admin.success_stories.destroy');
+
+
+ 
+
+    Route::get('/banners/list', [BannerController::class, 'index'])->name('admin.banners.index');
+    Route::get('/banners/create', [BannerController::class, 'create'])->name('admin.banners.create');
+    Route::get('/banners/{id}', [BannerController::class, 'show'])->name('admin.banners.show');
+    Route::post('/banners', [BannerController::class, 'store'])->name('admin.banners.store');
+    Route::delete('/banners/{id}', [BannerController::class, 'destroy'])->name('admin.banners.destroy');
+
 
 });
 
