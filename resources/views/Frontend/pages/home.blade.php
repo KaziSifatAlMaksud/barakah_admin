@@ -4,6 +4,7 @@
 @section('title', 'Home - BSAT')
 
 @section('content')
+  
     <!-- Modal Search Start -->
     <div
       class="modal fade"
@@ -49,11 +50,12 @@
     <div class="header-carousel owl-carousel">
       <div
         class="header-carousel-item bg-primary"
-        style="
-          background-image: url('img/hero/bsatd.png');
+          style="
+          background-image: url('{{ asset('assets/img/hero/bsatd.png') }}');
           background-size: cover;
           background-position: center;
-        "
+      "
+
       >
         <div class="carousel-caption">
           <div class="container">
@@ -97,7 +99,7 @@
       <div
         class="header-carousel-item bg-primary"
         style="
-          background-image: url('img/hero/hero-2.jpeg');
+              background-image: url('{{ asset('assets/img/hero/hero-2.jpeg') }}');
           background-size: cover;
           background-position: center;
         "
@@ -147,7 +149,7 @@
       <div
         class="header-carousel-item bg-primary"
         style="
-          background-image: url('img/img_pic/1.Home/1.3.jpg');
+          background-image: url('{{ asset('assets/img/img_pic/1.Home/1.3.jpg') }}');
           background-size: cover;
           background-position: center;
         "
@@ -216,7 +218,7 @@
         >
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="img/cliend/5.png"
+              src="{{ asset('assets/img/client/5.png') }}"
               class="img-fluid rounded"
               style="max-height: auto"
               alt="Client 1"
@@ -224,7 +226,7 @@
           </div>
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="img/cliend/6.png"
+              src="{{ asset('assets/img/client/6.png') }}"
               class="img-fluid rounded"
               style="max-height: auto"
               alt="Client 2"
@@ -232,7 +234,7 @@
           </div>
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="img/cliend/7.png"
+              src="{{ asset('assets/img/client/7.png') }}"
               class="img-fluid rounded"
               style="max-height: auto"
               alt="Client 3"
@@ -240,7 +242,7 @@
           </div>
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="img/cliend/8.png"
+              src="{{ asset('assets/img/client/8.png') }}"
               class="img-fluid rounded"
               style="max-height: auto"
               alt="Client 4"
@@ -248,7 +250,7 @@
           </div>
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="img/cliend/9.png"
+              src="{{ asset('assets/img/client/9.png') }}"
               class="img-fluid rounded"
               style="max-height: auto"
               alt="Client 5"
@@ -256,7 +258,7 @@
           </div>
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="img/cliend/10.png"
+              src="{{ asset('assets/img/client/10.png') }}"
               class="img-fluid rounded"
               style="max-height: auto"
               alt="Client 5"
@@ -264,7 +266,7 @@
           </div>
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="img/cliend/11.png"
+              src="{{ asset('assets/img/client/11.png') }}"
               class="img-fluid rounded"
               style="max-height: auto"
               alt="Client 5"
@@ -387,7 +389,7 @@
             <div class="service-item">
               <div class="service-img">
                 <img
-                  src="img/services/Princeton-university-admission-jpg.webp"
+                  src="{{ asset('assets/img/services/Princeton-university-admission-jpg.webp') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -421,7 +423,7 @@
             <div class="service-item">
               <div class="service-img">
                 <img
-                  src="img/services/visa assistance.png"
+                  src="{{ asset('assets/img/services/visa assistance.png') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -455,7 +457,7 @@
             <div class="service-item">
               <div class="service-img">
                 <img
-                  src="img/services/scholarship.png"
+                  src="{{ asset('assets/img/services/scholarship.png') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -489,7 +491,7 @@
             <div class="service-item">
               <div class="service-img">
                 <img
-                  src="img/services/travel.jpeg"
+                  src="{{ asset('assets/img/services/travel.jpeg') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -517,7 +519,7 @@
           <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
             <a
               class="btn btn-primary rounded-pill py-3 px-5"
-              href="service.html"
+              href="{{ route('services') }}"
               >More Services</a
             >
           </div>
@@ -550,7 +552,7 @@
             <div class="service-item shadow">
               <div class="service-img position-relative">
                 <img
-                  src="img/img_pic/3.1 USA/Whisk_0fbb9647ea.jpg"
+                  src="{{  asset('assets/img/img_pic/3.1 USA/Whisk_0fbb9647ea.jpg') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -569,7 +571,7 @@
                   "
                 >
                   <img
-                    src="img/about/usa_flag.png"
+                    src="{{ asset('assets/img/about/usa_flag.png') }}"
                     alt="Flag"
                     style="
                       width: 100%;
@@ -597,7 +599,7 @@
             <div class="service-item shadow">
               <div class="service-img position-relative">
                 <img
-                  src="img/about/australia_photo.png"
+                  src="{{ asset('assets/img/about/australia_photo.png') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -618,7 +620,7 @@
                   "
                 >
                   <img
-                    src="img/about/australian flag.png"
+                    src="{{ asset('assets/img/about/australian flag.png') }}"
                     alt="Flag"
                     style="
                       width: 100%;
@@ -647,7 +649,7 @@
             <div class="service-item shadow">
               <div class="service-img position-relative">
                 <img
-                  src="img/img_pic/3.2 United Kingdom/Whisk_0ad5784c9c.jpg"
+                  src="{{ asset('assets/img/img_pic/3.2 United Kingdom/Whisk_0ad5784c9c.jpg') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -666,7 +668,7 @@
                   "
                 >
                   <img
-                    src="img/about/uk_flag.jpg"
+                    src="{{ asset('assets/img/about/uk_flag.jpg') }}"
                     alt="Flag"
                     style="
                       width: 100%;
@@ -696,7 +698,7 @@
             <div class="service-item shadow">
               <div class="service-img position-relative">
                 <img
-                  src="img/about/canada_photo.jpeg"
+                  src="{{ asset('assets/img/about/canada_photo.jpeg') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -715,7 +717,7 @@
                   "
                 >
                   <img
-                    src="img/about/canada_flag.png"
+                    src="{{ asset('assets/img/about/canada_flag.png') }}"
                     alt="Flag"
                     style="
                       width: 100%;
@@ -746,7 +748,7 @@
             <div class="service-item shadow">
               <div class="service-img position-relative">
                 <img
-                  src="img/img_pic/3.4 Europe/Whisk_2c072648c6.jpg"
+                  src="{{ asset('assets/img/img_pic/3.4 Europe/Whisk_2c072648c6.jpg') }}"
                   class="img-fluid rounded-top w-100"
                   alt=""
                 />
@@ -765,7 +767,7 @@
                   "
                 >
                   <img
-                    src="img/about/europe_flug.png"
+                    src="{{ asset('assets/img/about/europe_flag.png') }}"
                     alt="Flag"
                     style="
                       width: 100%;
@@ -792,10 +794,11 @@
             <div class="service-item shadow">
               <div class="service-img position-relative">
                 <img
-                  src="img/img_pic/3. Destinations/6. New Zealand.jpg"
+                  src="{{ asset('assets/img/img_pic/3. Destinations/6. New Zealand.jpg') }}"
                   class="img-fluid rounded-top w-100"
-                  alt=""
+                  alt="New Zealand"
                 />
+
               </div>
 
               <div class="service-content p-4" style="z-index: 0">
@@ -811,7 +814,7 @@
                   "
                 >
                   <img
-                    src="img/about/New_Zealand_flag.png"
+                    src="{{ asset('assets/img/about/New_Zealand_flag.png') }}"
                     alt="Flag"
                     style="
                       width: 100%;
@@ -836,7 +839,7 @@
          <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
             <a
               class="btn btn-primary rounded-pill py-3 px-5"
-              href="destinations.html"
+              href="{{ route('destinations') }}"
               >More Destinations</a
             >
           </div>
@@ -870,7 +873,7 @@
               <div class="col-4 col-lg-4 col-xl-3">
                 <div class="h-100">
                   <img
-                    src="img/story/Iqbal.png"
+                    src="{{ asset('assets/img/story/Iqbal.png') }}"
                     class="img-fluid h-100 rounded"
                     style="object-fit: cover"
                     alt=""
@@ -906,7 +909,7 @@
               <div class="col-4 col-lg-4 col-xl-3">
                 <div class="h-100">
                   <img
-                    src="img/story/saad.png"
+                    src="{{ asset('assets/img/story/saad.png') }}"
                     class="img-fluid h-100 rounded"
                     style="object-fit: cover"
                     alt=""
@@ -969,7 +972,7 @@
               <div class="col-4 col-lg-4 col-xl-3">
                 <div class="h-100">
                   <img
-                    src="img/story/tuhin.png"
+                    src="{{ asset('assets/img/story/tuhin.png') }}"
                     class="img-fluid h-100 rounded"
                     style="object-fit: cover"
                     alt=""
@@ -1025,7 +1028,7 @@
               <div class="col-4 col-lg-4 col-xl-3">
                 <div class="h-100">
                   <img
-                    src="img/story/Mariom.png"
+                    src="{{ asset('assets/img/story/Mariom.png') }}"
                     class="img-fluid h-100 rounded"
                     style="object-fit: cover"
                     alt=""
@@ -1109,7 +1112,7 @@
                 <div class="col-12">
                   <div class="rounded bg-light">
                     <img
-                      src="img/high range exploring.png"
+                      src="{{ asset('assets/img/high range exploring.png') }}"
                       class="img-fluid rounded w-100"
                       alt=""
                     />
@@ -1174,198 +1177,4 @@
       </div>
     </div>
     <!-- About End -->
-
-   
-
-    <!-- FAQs Start -->
-    <!-- <div class="container-fluid faq-section bg-light py-5">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="h-100">
-              <div class="mb-5">
-                <h4 class="text-primary">Some Important FAQ's</h4>
-                <h1 class="display-4 mb-0">
-                  Common Frequently Asked Questions
-                </h1>
-              </div>
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button border-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Q: What happens during Freshers' Week?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show active"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body rounded">
-                      A: Leverage agile frameworks to provide a robust synopsis
-                      for high level overviews. Iterative approaches to
-                      corporate strategy foster collaborative thinking to
-                      further the overall value proposition. Organically grow
-                      the holistic world view of disruptive innovation via
-                      workplace diversity and empowerment.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Q: What is the transfer application process?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      A: Leverage agile frameworks to provide a robust synopsis
-                      for high level overviews. Iterative approaches to
-                      corporate strategy foster collaborative thinking to
-                      further the overall value proposition. Organically grow
-                      the holistic world view of disruptive innovation via
-                      workplace diversity and empowerment.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Q: Why should I attend community college?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      A: Leverage agile frameworks to provide a robust synopsis
-                      for high level overviews. Iterative approaches to
-                      corporate strategy foster collaborative thinking to
-                      further the overall value proposition. Organically grow
-                      the holistic world view of disruptive innovation via
-                      workplace diversity and empowerment.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-            <div class="d-flex align-items-center h-100">
-              <img
-                src="img/frequently_asked_questions.png"
-                class="img-fluid mx-auto"
-                alt="FAQs Image"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- FAQs End -->
-
-    <!-- Blog Start -->
-    <!-- <div class="container-fluid blog py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">From Blog</h4>
-                    <h1 class="display-4 mb-4">News And Updates</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Business</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Which allows you to pay down insurance bills</a>
-                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-2.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Business</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
-                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Business</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Leverage agile frameworks to provide</a>
-                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- Blog End -->
 @endsection

@@ -64,7 +64,7 @@
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
+          <a href="{{ route('home') }}" class="navbar-brand p-0">
             <img src="{{ asset('assets/img/logo/Barakah-Logo.png') }}" alt="Logo" height="150" />
 
           </a>

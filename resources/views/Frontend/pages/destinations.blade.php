@@ -95,7 +95,7 @@
                   <div class="service-item position-relative">
                     <div class="service-img">
                       <img
-                        src="img/img_pic/3. Destinations/1. USA.jpg"
+                        src="{{ asset('assets/img/img_pic/3. Destinations/1. USA.jpg') }}"
                         class="img-fluid rounded-top w-100"
                         alt=""
                       />
@@ -114,7 +114,7 @@
                         "
                       >
                         <img
-                          src="img/about/usa_flag.png"
+                          src="{{ asset('assets/img/about/usa_flag.png') }}"
                           alt="Flag"
                           style="
                             width: 100%;
@@ -148,7 +148,7 @@
                     <div class="service-item position-relative">
                         <div class="service-img">
                             <img
-                                src="img/img_pic/3. Destinations/2. UK.jpg"
+                                src="{{ asset('assets/img/img_pic/3. Destinations/2. UK.jpg') }}"
                                 class="img-fluid rounded-top w-100"
                                 alt=""
                             />
@@ -167,7 +167,7 @@
                                 "
                             >
                                 <img
-                                    src="img/about/uk_flag.jpg"
+                                    src="{{ asset('assets/img/about/uk_flag.jpg') }}"
                                     alt="Flag"
                                     style="
                                         width: 100%;
@@ -202,7 +202,7 @@
                   <div class="service-item position-relative">
                       <div class="service-img">
                           <img
-                              src="img/img_pic/3.3 Canada/Whisk_0abeffafac.jpg"
+                              src="{{ asset('assets/img/img_pic/3.3 Canada/Whisk_0abeffafac.jpg') }}"
                               class="img-fluid rounded-top w-100"
                               alt=""
                           />
@@ -221,7 +221,7 @@
                               "
                           >
                               <img
-                                  src="img/about/canada_flag.png"
+                                  src="{{ asset('assets/img/about/canada_flag.png') }}"
                                   alt="Flag"
                                   style="
                                       width: 100%;
@@ -258,7 +258,7 @@
                   <div class="service-item position-relative">
                       <div class="service-img">
                           <img
-                              src="img/about/australia_photo.png"
+                              src="{{ asset('assets/img/about/australia_photo.png') }}"
                               class="img-fluid rounded-top w-100"
                               alt=""
                           />
@@ -277,7 +277,7 @@
                               "
                           >
                               <img
-                                  src="img/about/australian flag.png"
+                                  src="{{ asset('assets/img/about/australian flag.png') }}"
                                   alt="Flag"
                                   style="
                                       width: 100%;
@@ -310,7 +310,7 @@
                   <div class="service-item position-relative">
                       <div class="service-img">
                           <img
-                              src="img/img_pic/3. Destinations/4. Europe.jpg"
+                              src="{{ asset('assets/img/img_pic/3. Destinations/4. Europe.jpg') }}"
                               class="img-fluid rounded-top w-100"
                               alt=""
                           />
@@ -329,7 +329,7 @@
                               "
                           >
                               <img
-                                  src="img/about/europe_flug.png"
+                                  src="{{ asset('assets/img/about/europe_flug.png') }}"
                                   alt="Flag"
                                   style="
                                       width: 100%;
@@ -363,7 +363,7 @@
                 <div class="service-item position-relative">
                     <div class="service-img">
                         <img
-                            src="img/img_pic/3. Destinations/6. New Zealand.jpg"
+                            src="{{ asset('assets/img/img_pic/3. Destinations/6. New Zealand.jpg') }}"
                             class="img-fluid rounded-top w-100"
                             alt=""
                         />
@@ -382,7 +382,7 @@
                             "
                         >
                             <img
-                                src="img/about/New_Zealand_flag.png"
+                                src="{{ asset('assets/img/about/New_Zealand_flag.png')}}"
                                 alt="Flag"
                                 style="
                                     width: 100%;
@@ -506,7 +506,7 @@
             <div class="contact-img w-100 d-flex justify-content-center">
               <div class="contact-img-inner">
                 <img
-                  src="img/versity_girls.png"
+                  src="{{ asset('assets/img/versity_girls.png') }}"
                   class="img-fluid w-100"
                   alt="Image"
                 />
