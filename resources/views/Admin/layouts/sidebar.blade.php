@@ -46,6 +46,18 @@
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link justify-content-between"  
+                href="{{ route('admin.success_stories.index') }}" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Success Stories</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
                 href="{{ route('admin.country.index') }}" aria-expanded="false">
                 <div class="d-flex align-items-center gap-3">
                   <span class="d-flex">

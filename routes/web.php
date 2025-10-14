@@ -4,10 +4,12 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DestinationController;
+use App\Http\Controllers\SuccessStoryController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('Admin.pages.dashboard');
@@ -27,6 +29,12 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/country/{id}', [DestinationController::class, 'show'])->name('admin.country.show');
     Route::delete('/country/{id}', [DestinationController::class, 'destroy'])->name('admin.country.destroy');
 
+    Route::get('/success_stories/list', [SuccessStoryController::class, 'index'])->name('admin.success_stories.index');
+    Route::get('/success_stories/create', [SuccessStoryController::class, 'create'])->name('admin.success_stories.create');
+    Route::get('/success_stories/{id}', [SuccessStoryController::class, 'show'])->name('admin.success_stories.show');
+    Route::post('/success_stories', [SuccessStoryController::class, 'store'])->name('admin.success_stories.store');
+    Route::delete('/success_stories/{id}', [SuccessStoryController::class, 'destroy'])->name('admin.success_stories.destroy');
+
 });
 
 
@@ -35,7 +43,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::post('/contact', [ContactUsController::class, 'store'])->name('frontend.contact.store');
 
 
-    Route::get('/home', function() { return view('Frontend.pages.home');})->name('home');
+    Route::get('/', function() { return view('Frontend.pages.home');})->name('home');
     Route::get('/about', function() { return view('Frontend.pages.about');})->name('about');
     Route::get('/destinations', function() { return view('Frontend.pages.destinations');})->name('destinations');
     Route::get('/services', function() { return view('Frontend.pages.services');})->name('services');

@@ -81,7 +81,7 @@
                     >
                     <a
                       class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
-                      href="#"
+                      href="{{ route('about') }}"
                       >Learn More</a
                     >
                   </div>
@@ -305,7 +305,7 @@
               <p class="mb-4">
                 We are a trusted company dedicated to delivering reliable solutions, quality service, and lasting value.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="about.html"
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('about') }}"
                 >Learn More</a
               >
             </div>
@@ -322,7 +322,7 @@
               <p class="mb-4">
                 We stand by our promise of quality with an anytime money-back guarantee for your peace of mind.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="about.html"
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('about') }}"
                 >Learn More</a
               >
             </div>
@@ -339,7 +339,7 @@
               <p class="mb-4">
                 Choose from our flexible plans designed to fit your budget, needs, and lifestyle effortlessly.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="index.html"
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('about') }}"
                 >Learn More</a
               >
             </div>
@@ -356,7 +356,7 @@
               <p class="mb-4">
                 We are committed to providing 24/7 fast support to assist you with any inquiries or issues.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="index.html"
+              <a class="btn btn-primary rounded-pill py-2 px-4"  href="{{ route('about') }}"
                 >Learn More</a
               >
             </div>

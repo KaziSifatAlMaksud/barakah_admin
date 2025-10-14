@@ -78,12 +78,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-0 mx-lg-auto">
-              <a href="{{ url('home') }}" class="nav-item nav-link active">Home</a>
-              <a href="{{ url('about') }}" class="nav-item nav-link">About</a>
-               
+              <a href="{{ route('home') }}" class="nav-item nav-link {{ Request::is('home') ? 'active' : '' }}">Home</a>
+              <a href="{{ url('about') }}" class="nav-item nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
+
               <div class="nav-item dropdown ">
                   <!-- Main link clickable -->
-                  <a href="{{ url('destinations') }}" class="nav-link ">
+                  <a href="{{ url('destinations') }}" class="nav-link " {{ Request::is('destinations') ? 'active' : '' }}>
                       Destinations
                   </a>
 
@@ -99,7 +99,7 @@
 
               <div class="nav-item dropdown">
                   <!-- Main link clickable -->
-                  <a href="{{ url('services') }}" class="nav-link">
+                  <a href="{{ url('services') }}" class="nav-link" {{ Request::is('services') ? 'active' : '' }}>
                       Services
                   </a>
 
@@ -144,7 +144,7 @@
            
                <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
              
-              <a href="{{ route('contact')  }}" class="nav-item nav-link">Contact</a>
+              <a href="{{ route('contact')  }}" class="nav-item nav-link" {{ Request::is('contact') ? 'active' : '' }}>Contact</a>
               <div class="nav-btn px-3">
                 <button
                   class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0"

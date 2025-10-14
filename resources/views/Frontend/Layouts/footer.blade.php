@@ -41,22 +41,20 @@
                 <div class="col-md-6 col-lg-4 col-xl-5">
                   <div class="footer-item">
                     <h4 class="text-white mb-4">Useful Links</h4>
-                    <a href="#"
+                    <a href=" {{ route('about') }}"
                       ><i class="fas fa-angle-right me-2"></i> About Us</a
                     >
-                    <a href="#"
+                    <a href="{{ route('destinations') }}"
                       ><i class="fas fa-angle-right me-2"></i> Destinations</a
                     >
-                    <a href="#"
+                    <a href="{{ route('services') }}"
                       ><i class="fas fa-angle-right me-2"></i> Services</a
                     >
-                    <a href="#"
-                      ><i class="fas fa-angle-right me-2"></i> Blogs</a
-                    >
-                    <a href="#"
+             
+                    <a href="{{ route('courses') }}"
                       ><i class="fas fa-angle-right me-2"></i> Courses</a
                     >
-                    <a href="#"
+                    <a href="{{ route('contact') }}"
                       ><i class="fas fa-angle-right me-2"></i> Contact</a
                     >
                   </div>
