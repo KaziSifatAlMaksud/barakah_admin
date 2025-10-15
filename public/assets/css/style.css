@@ -13,6 +13,9 @@
 }
 
 /*** Spinner End ***/
+.test-color-dark{
+    color: var(--bs-dark);
+}
 
 .back-to-top {
     position: fixed;

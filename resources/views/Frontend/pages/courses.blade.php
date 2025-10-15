@@ -75,7 +75,7 @@
                     </ul>
 
                     </p>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.1.businessandManagement.html"
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.engineering') }}"
                         >Learn More</a
                     >
                     </div>
@@ -99,7 +99,7 @@
                         </ul>
 
                     </p>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.2.engineeringAndTechnology.html"
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.business') }}"
                         >Learn More</a
                     >
                     </div>
@@ -126,7 +126,7 @@
                         </ul>
 
                     </p>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.6.HospitalityAndTourism.html"
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.hospitality') }}"
                         >Learn More</a
                     >
                     </div>
@@ -153,7 +153,7 @@
                         </ul>
 
                     </p>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.7.LawAndCriminology.html"
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.law') }}"
                         >Learn More</a
                     >
                     </div>
@@ -179,7 +179,7 @@
                         </ul>
 
                     </p>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.8.EducationAndTeaching.html"
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.education') }}"
                         >Learn More</a
                     >
                     </div>
@@ -206,7 +206,7 @@
                       </ul>
 
                     </p>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.4.artsHumanities.html"
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.arts') }}"
                         >Learn More</a
                     >
                     </div>
@@ -230,7 +230,7 @@
                             </ul>
 
                         </p>
-                        <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.3.healthLifeScience.html"
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.health') }}"
                             >Learn More</a
                         >
                         </div>
@@ -253,7 +253,7 @@
                                 <li class="py-1"><p class="mb-0">Ecology</p></li>
                             </ul>
                         </p>
-                        <a class="btn btn-primary rounded-pill py-2 px-4" href="courses/6.5.scienceAndEnvirerment.html"
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="{{ route('courses.environment') }}"
                             >Learn More</a
                         >
                         </div>
@@ -273,10 +273,9 @@
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-primary">You may be eligible for up to 50% Scholarship at a renowned University Abroad</h4>
                 <p class="mb-0">Check your eligibility and receive end to end assisstance for FREE!</p>
-                    <button class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
-                                        Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
-                    </button>
-
+                    <a href="{{ route('apply_with_us') }}" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
+                        Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
+                    </a>
                 </div>        
             </div> <!-- End of container -->
         </div>

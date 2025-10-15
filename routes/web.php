@@ -58,7 +58,23 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/destinations', function() { return view('Frontend.pages.destinations');})->name('destinations');
     Route::get('/services', function() { return view('Frontend.pages.services');})->name('services');
     Route::get('/courses', function() { return view('Frontend.pages.courses');})->name('courses');
+
+    Route::get('/courses/engineeringandtechnology', function() { return view('Frontend.courses.businessandManagement');})->name('courses.engineering');
+    Route::get('/courses/BusinessAndManagement', function() { return view('Frontend.courses.engineeringAndTechnology');})->name('courses.business');
+    Route::get('/courses/HealthLifeScience', function() { return view('Frontend.courses.HealthLifeScience');})->name('courses.health');
+    Route::get('/courses/ComputingAndIT', function() { return view('Frontend.courses.ComputingAndIT');})->name('courses.computing');
+    Route::get('/courses/EducationAndTeaching', function() { return view('Frontend.courses.EducationAndTeaching');})->name('courses.education');
+    Route::get('/courses/HospitalityAndTourism', function() { return view('Frontend.courses.HospitalityAndTourism');})->name('courses.hospitality');
+    Route::get('/courses/lawAndCriminology', function() { return view('Frontend.courses.lawAndCriminology');})->name('courses.law');  
+    Route::get('/courses/ScienceAndMaths', function() { return view('Frontend.courses.ScienceAndMaths');})->name('courses.science');
+    Route::get('/courses/ArtsAndHumanities', function() { return view('Frontend.courses.artsHumanities');})->name('courses.arts');
+    Route::get('/courses/SocialSciences', function() { return view('Frontend.courses.SocialSciences');})->name('courses.social');
+    Route::get('/courses/MediaAndDesign', function() { return view('Frontend.courses.MediaAndDesign');})->name('courses.media');
+    Route::get('/courses/scienceAndEnvironment', function() { return view('Frontend.courses.scienceAndEnvironment');})->name('courses.environment');
+    
     Route::get('/contact', function() { return view('Frontend.pages.contact');})->name('contact');
+
+    Route::get('/apply_with_us', function() { return view('Frontend.pages.apply_with_us');})->name('apply_with_us');
 
 
 
