@@ -47,154 +47,58 @@
     <!-- Modal Search End -->
 
     <!-- Carousel Start -->
+   <!-- Hero Carousel Start-->
     <div class="header-carousel owl-carousel">
-      <div
-        class="header-carousel-item bg-primary"
+
+    @if($Bannars->count() > 0)
+      @foreach ($Bannars as $Bannar)
+        <div
+          class="header-carousel-item bg-primary"
           style="
-          background-image: url('{{ asset('assets/img/hero/bsatd.png') }}');
-          background-size: cover;
-          background-position: center;
-      "
-
-      >
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="row g-4 align-items-center">
-              <div class="col-lg-7 animated fadeInLeft">
-                <div class="text-sm-center text-md-start">
-                  <h4 class="text-white text-uppercase fw-bold mb-4">
-                    Welcome To Barakah
-                  </h4>
-                  <h1 class="display-1 text-white mb-4">Welcome To Barakah</h1>
-                  <p class="mb-5 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy...
-                  </p>
-                  <div
-                    class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
-                  >
-                    <a
-                      class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2"
-                      href="#"
-                      ><i class="fas fa-play-circle me-2"></i> Watch Video</a
+            background-image: url('{{ asset($Bannar->image) }}');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="carousel-caption">
+            <div class="container">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-7 animated fadeInLeft">
+                  <div class="text-sm-center text-md-start">
+                    <h4 class="text-white text-uppercase fw-bold mb-4">
+                       Welcome To Barakah
+                    </h4>
+               
+                    <h1 class="display-1 text-white mb-4">{{ $Bannar->title }}</h1>
+                    <p class="mb-5 fs-5">
+                      {{ $Bannar->description }}
+                    </p>
+                    <div
+                      class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
                     >
-                    <a
-                      class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
-                      href="{{ route('about') }}"
-                      >Learn More</a
-                    >
+                      <a
+                        class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2"
+                        href="#"
+                        ><i class="fas fa-play-circle me-2"></i> Watch Video</a
+                      >
+                      <a
+                        class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
+                        href="{{ route('about') }}"
+                        >Learn More</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- <div class="col-lg-5 animated fadeInRight">
-                                <div class="calrousel-img" style="object-fit: cover;">
-                                    <img src="img/carousel-2.png" class="img-fluid w-100" alt="">
-                                </div>
-                            </div> -->
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="header-carousel-item bg-primary"
-        style="
-              background-image: url('{{ asset('assets/img/hero/hero-2.jpeg') }}');
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="row g-4 align-items-center">
-              <div class="col-lg-7 animated fadeInLeft">
-                <div class="text-sm-center text-md-start">
-                  <h4 class="text-white text-uppercase fw-bold mb-4">
-                    Welcome To Barakah
-                  </h4>
-                  <h1 class="display-1 text-white mb-4">Welcome To Barakah</h1>
-                  <p class="mb-5 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy...
-                  </p>
-                  <div
-                    class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
-                  >
-                    <a
-                      class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2"
-                      href="#"
-                      ><i class="fas fa-play-circle me-2"></i> Watch Video</a
-                    >
-                    <a
-                      class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
-                      href="#"
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="col-lg-5 animated fadeInRight">
-                                <div class="calrousel-img" style="object-fit: cover;">
-                                    <img src="img/carousel-2.png" class="img-fluid w-100" alt="">
-                                </div>
-                            </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- End Hero Carousel -->
-
-      <div
-        class="header-carousel-item bg-primary"
-        style="
-          background-image: url('{{ asset('assets/img/img_pic/1.Home/1.3.jpg') }}');
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="row g-4 align-items-center">
-              <div class="col-lg-7 animated fadeInLeft">
-                <div class="text-sm-center text-md-start">
-                  <h4 class="text-white text-uppercase fw-bold mb-4">
-                    Welcome To Barakah
-                  </h4>
-                  <h1 class="display-1 text-white mb-4">Welcome To Barakah</h1>
-                  <p class="mb-5 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy...
-                  </p>
-                  <div
-                    class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4"
-                  >
-                    <a
-                      class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2"
-                      href="#"
-                      ><i class="fas fa-play-circle me-2"></i> Watch Video</a
-                    >
-                    <a
-                      class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2"
-                      href="#"
-                      >Learn More</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="col-lg-5 animated fadeInRight">
-                                <div class="calrousel-img" style="object-fit: cover;">
-                                    <img src="img/carousel-2.png" class="img-fluid w-100" alt="">
-                                </div>
-                            </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
+        <!-- End Hero Carousel -->
+      @endforeach
+      @endif
     </div>
     <!-- Carousel End -->
+    <!-- Hero Section End -->
 
     <!-- Clients Section Start -->
     <div class="container-fluid client-section pb-5 mt-5 pt-4">

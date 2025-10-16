@@ -70,9 +70,10 @@
 
       <h2 class="title mb-4">Law & Criminology – BSAT</h2>
 
+      <hr class="my-5" />
       <!-- Introduction -->
-      <h3>Introduction</h3>
-      <p>
+      <h3 class="text-primary fs-4">Introduction</h3>
+      <p class="test-color-dark fs-5">
         Uphold Justice and Understand Criminal Behavior
         <br />
         Law & Criminology programs offer in-depth knowledge of legal systems,
@@ -84,11 +85,11 @@
         practice or public sector roles.
       </p>
 
-      <div
-        class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4"
-      >
+       <div
+          class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4 rounded-3"
+        >
         <img
-          src="../img/img_pic/6.7 Law & Criminology/Whisk_d2f17ded94.jpg"
+          src="{{ asset('assets/img/img_pic/6.7 Law & Criminology/Whisk_d2f17ded94.jpg') }}"
           alt="Pre and Post Arrival Support"
           class="img-fluid"
         />
@@ -97,8 +98,8 @@
       <hr class="my-5" />
 
       <!-- Popular Programs -->
-      <h3>Popular Programs</h3>
-      <ul>
+      <h3 class="text-primary fs-4">Popular Programs</h3>
+      <ul class="test-color-dark fs-5">
         <li>LLB (Bachelor of Laws)</li>
         <li>LLM (Master of Laws)</li>
         <li>Criminology & Criminal Justice</li>
@@ -114,9 +115,9 @@
       <hr class="my-5" />
 
       <!-- Career Pathways -->
-      <h3>Career Pathways</h3>
-      <p>Graduates in Law & Criminology can pursue roles in:</p>
-      <ul>
+      <h3 class="text-primary fs-4">Career Pathways</h3>
+      <p class="test-color-dark fs-5">Graduates in Law & Criminology can pursue roles in:</p>
+      <ul class="test-color-dark fs-5">
         <li>Legal Practice (Solicitor/Barrister)</li>
         <li>Police & Criminal Investigations</li>
         <li>Forensics & Crime Scene Analysis</li>
@@ -132,8 +133,10 @@
       <!-- Entry Requirements -->
       <h3>Entry Requirements</h3>
 
-      <h5>For Bachelor’s Programs:</h5>
-      <ul>
+      <hr class="my-5" />
+
+      <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
+      <ul class="test-color-dark fs-5">
         <li>
           High school certificate (with humanities or law-related subjects
           preferred)
@@ -150,8 +153,8 @@
         </li>
       </ul>
 
-      <h5>For Master’s Programs:</h5>
-      <ul>
+      <h5 class="text-primary fs-4">For Master’s Programs:</h5>
+      <ul class="test-color-dark fs-5">
         <li>Bachelor’s degree in law, social sciences, or related field</li>
         <li>GPA: 3.0 out of 4.0</li>
         <li>
@@ -345,9 +348,9 @@
           <p class="mb-0">
             Check your eligibility and receive end to end assisstance for FREE!
           </p>
-          <button class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
+           <a href="{{ route('apply_with_us') }}" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
             Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
-          </button>
+          </a>
         </div>
       </div>
       <!-- End of container -->

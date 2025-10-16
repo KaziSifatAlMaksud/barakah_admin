@@ -49,18 +49,8 @@
 
         <h2 class="title mb-4">Engineering & Technology – BSAT</h2>
 
-        <div
-          class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4 rounded-3"
-        >
-   
-          <img
-            src="../img/img_pic/6.2 Engineering Technology/Whisk_1d7f7e46aa.jpg"
-            alt="Pre and Post Arrival Support"
-            class="img-fluid"
-          />
-        </div>
-
-        <!-- Introduction -->
+        <hr class="my-5">
+         <!-- Introduction -->
         <h3 class="text-primary fs-4">Introduction</h3>
         <p class="test-color-dark fs-5">
           Build the Future with Innovation and Engineering Excellence. <br />
@@ -72,6 +62,19 @@
           offer cutting-edge labs, real-world research, and strong career
           outcomes.
         </p>
+
+        <div
+          class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4 rounded-3"
+        >
+   
+          <img
+            src="{{ asset('assets/img/img_pic/6.2 Engineering Technology/Whisk_1d7f7e46aa.jpg') }}"
+            alt="Pre and Post Arrival Support"
+            class="img-fluid"
+          />
+        </div>
+
+       
 
         <hr class="my-5" />
 
@@ -93,9 +96,9 @@
         <hr class="my-5" />
 
         <!-- Career Pathways -->
-        <h3>Career Pathways</h3>
-        <p>Graduates of Engineering & Technology programs can work in:</p>
-        <ul>
+        <h3 class="text-primary fs-4">Career Pathways</h3>
+        <p class="test-color-dark fs-5">Graduates of Engineering & Technology programs can work in:</p>
+        <ul class="test-color-dark fs-5">
           <li>Construction & Infrastructure</li>
           <li>Automotive & Manufacturing Industries</li>
           <li>Energy & Environmental Sectors</li>
@@ -104,7 +107,7 @@
           <li>Artificial Intelligence & Data Analytics</li>
           <li>Aerospace & Defense</li>
         </ul>
-        <p>
+        <p class="test-color-dark fs-5">
           Many engineers also progress into project management, consultancy, and
           innovation roles.
         </p>
@@ -113,8 +116,11 @@
 
         <!-- Entry Requirements -->
         <h3>Entry Requirements</h3>
-        <h5>For Bachelor’s Programs:</h5>
-        <ul>
+
+        <hr class="my-5" />
+
+        <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
+        <ul class="test-color-dark fs-5">
           <li>
             Completion of 12 years of formal education with strong performance in
             Mathematics and Science
@@ -131,8 +137,8 @@
           </li>
         </ul>
 
-        <h5>For Master’s Programs:</h5>
-        <ul>
+        <h5 class="text-primary fs-4">For Master’s Programs:</h5>
+        <ul class="test-color-dark fs-5">
           <li>
             Bachelor’s degree in a relevant engineering or science discipline
           </li>
@@ -259,9 +265,9 @@
                 <div class="text-center mx-auto  wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                 <h4 class="text-primary">You may be eligible for up to 50% Scholarship at a renowned University Abroad</h4>
                 <p class="mb-0">Check your eligibility and receive end to end assisstance for FREE!</p>
-                    <button class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
-                                        Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
-                    </button>
+                      <a href="{{ route('apply_with_us') }}" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
+                        Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
+                      </a>
 
                 </div>        
             </div> <!-- End of container -->

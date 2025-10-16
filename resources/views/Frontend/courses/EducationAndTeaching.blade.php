@@ -70,9 +70,11 @@
 
       <h2 class="title mb-4">Education & Teaching – BSAT</h2>
 
+      <hr class="my-5">
+
       <!-- Introduction -->
-      <h3>Introduction</h3>
-      <p>
+      <h3 class="text-primary fs-4">Introduction</h3>
+      <p class="test-color-dark fs-5">
         Inspire Minds and Lead the Future of Learning
         <br />
         Education & Teaching programs are designed for those passionate about
@@ -86,10 +88,10 @@
       </p>
 
       <div
-        class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4"
+        class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4 rounded-3"
       >
         <img
-          src="../img/img_pic/6.8 Education & Teaching/Whisk_83afa10faa.jpg"
+          src="{{ asset('assets/img/img_pic/6.8 Education & Teaching/Whisk_83afa10faa.jpg') }}"
           alt="Pre and Post Arrival Support"
           class="img-fluid"
         />
@@ -98,8 +100,8 @@
       <hr class="my-5" />
 
       <!-- Popular Programs -->
-      <h3>Popular Programs</h3>
-      <ul>
+      <h3 class="text-primary fs-4">Popular Programs</h3>
+      <ul class="test-color-dark fs-5">
         <li>Early Childhood Education</li>
         <li>Primary & Secondary Teaching</li>
         <li>TESOL / ESL (Teaching English to Speakers of Other Languages)</li>
@@ -114,9 +116,9 @@
       <hr class="my-5" />
 
       <!-- Career Pathways -->
-      <h3>Career Pathways</h3>
-      <p>Graduates of Education & Teaching programs may work in:</p>
-      <ul>
+      <h3 class="text-primary fs-4">Career Pathways</h3>
+      <p class="test-color-dark fs-5">Graduates of Education & Teaching programs may work in:</p>
+      <ul class="test-color-dark fs-5">
         <li>Public or Private Schools (Local or International)</li>
         <li>Early Childhood Centers</li>
         <li>Language Institutes</li>
@@ -131,9 +133,10 @@
 
       <!-- Entry Requirements -->
       <h3>Entry Requirements</h3>
+      <hr class="my-5">
 
-      <h5>For Bachelor’s Programs:</h5>
-      <ul>
+      <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
+      <ul class="test-color-dark fs-5">
         <li>High school certificate</li>
         <li>GPA: 2.5 to 3.0 out of 4.0</li>
         <li>
@@ -147,8 +150,8 @@
         </li>
       </ul>
 
-      <h5>For Master’s Programs:</h5>
-      <ul>
+      <h5 class="text-primary fs-4">For Master’s Programs:</h5>
+      <ul class="test-color-dark fs-5">
         <li>Bachelor’s degree in education or a related field</li>
         <li>GPA: 3.0 out of 4.0</li>
         <li>
@@ -342,9 +345,9 @@
           <p class="mb-0">
             Check your eligibility and receive end to end assisstance for FREE!
           </p>
-          <button class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
+          <a href="{{ route('apply_with_us') }}" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
             Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
-          </button>
+          </a>
         </div>
       </div>
       <!-- End of container -->

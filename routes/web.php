@@ -7,6 +7,7 @@ use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\SuccessStoryController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\FrontendController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -58,8 +59,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     //Post Contact Form
     Route::post('/contact', [ContactUsController::class, 'store'])->name('frontend.contact.store');
 
+    Route::get('/', [FrontendController::class, 'home'])->name('home');
 
-    Route::get('/', function() { return view('Frontend.pages.home');})->name('home');
     Route::get('/about', function() { return view('Frontend.pages.about');})->name('about');
     Route::get('/destinations', function() { return view('Frontend.pages.destinations');})->name('destinations');
     Route::get('/services', function() { return view('Frontend.pages.services');})->name('services');

@@ -68,29 +68,24 @@
         <strong><i class="bi bi-arrow-left me-2"></i> Back</strong>
       </a>
 
-      <h2 class="title mb-4">Health & Life Sciences – BSAT</h2>
+      <h2 class="title mb-4">Business & Management – BSAT</h2>
 
       
 
       <!-- Introduction -->
-      <h3>Introduction</h3>
-      <p>
-        Make a Difference in the World of Healthcare and Scientific Discovery.
+      <h3 class="text-primary fs-4">Introduction</h3>
+      <p class="test-color-dark fs-5">
+        Shape Global Business with a World-Class Education.
         <br />
-        Health & Life Sciences programs are designed for students who are
-        passionate about helping others, advancing medical knowledge, and
-        improving quality of life. These degrees prepare future healthcare
-        professionals, researchers, and scientists to work at the forefront of
-        medicine, biotechnology, and public health. BSAT partners with top
-        universities offering world-class laboratories, clinical placements, and
-        global research opportunities in the life sciences field.
+      Business & Management is one of the most powerful academic fields that opens doors to countless career opportunities in today's competitive and interconnected world. Whether you're interested in finance, marketing, leadership, or launching your own startup — a degree in business equips you with the skills, knowledge, and confidence to thrive across industries and continents.At BSAT, we guide you toward the best universities and programs that blend academic excellence with real-world relevance. From foundational courses to globally recognized MBAs, our partner institutions help you build the mindset of a future business leader.
+
       </p>
 
-<div
+      <div
         class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4"
       >
         <img
-          src="../img/img_pic/6.1 Business Management/Whisk_24b6a2aa65.jpg"
+          src="{{ asset('assets/img/img_pic/6.1 Business Management/Whisk_24b6a2aa65.jpg') }}"
           alt="Pre and Post Arrival Support"
           class="img-fluid"
         />
@@ -98,48 +93,52 @@
       <hr class="my-5" />
 
       <!-- Popular Programs -->
-      <h3>Popular Programs</h3>
-      <ul>
-        <li>Nursing</li>
-        <li>Public Health</li>
-        <li>Biomedical Science</li>
-        <li>Pharmacy</li>
-        <li>Biotechnology</li>
-        <li>Nutrition & Dietetics</li>
-        <li>Physiotherapy</li>
-        <li>Medical Laboratory Technology</li>
-        <li>Health Informatics</li>
-        <li>Pre-Med Pathways</li>
+      <h3 class="text-primary fs-4">Popular Programs</h3>
+      <ul class="test-color-dark fs-5">
+        <li>Bachelor of Business Administration (BBA)</li>
+        <li>Master of Business Administration (MBA)</li>
+        <li>International Business</li>
+        <li>Marketing & Brand Management</li>
+        <li>Finance & Accounting</li>
+        <li>Entrepreneurship & Innovation</li>
+        <li>Human Resource Management</li>
+        <li>Supply Chain & Logistics</li>
+        <li>Hospitality Management</li>
+        <li>Business Analytics</li>
       </ul>
 
       <hr class="my-5" />
 
       <!-- Career Pathways -->
-      <h3>Career Pathways</h3>
-      <p>Graduates in Health & Life Sciences can work in:</p>
-      <ul>
-        <li>Hospitals & Clinics</li>
-        <li>Pharmaceutical Companies</li>
-        <li>Research & Diagnostic Laboratories</li>
-        <li>Government Health Departments</li>
-        <li>International Health Organizations</li>
-        <li>Public Health Policy & Advocacy</li>
-        <li>Biotech & Biomedical Research Firms</li>
+      <h3 class="text-primary fs-4">Career Pathways</h3>
+      <p class="test-color-dark fs-5">Graduates of Business & Management programs can pursue careers in:</p>
+      <ul class="test-color-dark fs-5">
+        <li>Banking and Finance</li>
+        <li>Marketing & Advertising</li>
+        <li>Consulting</li>
+        <li>International Trade</li>
+        <li>Human Resources</li>
+        <li>Startups & Entrepreneurship</li>
+        <li>Operations & Logistics</li>
+         <li>Business Strategy & Analytics</li>
+          <li>Operations & Logistics</li>
+          <li>Corporate Leadership Roles</li>
       </ul>
-      <p>These programs offer high employability and global impact.</p>
+      <p class="test-color-dark fs-5">Top employers include multinational corporations, consulting firms, financial institutions, and tech startups.</p>
 
       <hr class="my-5" />
 
       <!-- Entry Requirements -->
       <h3>Entry Requirements</h3>
+      <hr class="my-5" />
 
-      <h5>For Bachelor’s Programs:</h5>
-      <ul>
+      <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
+      <ul class="test-color-dark fs-5">
         <li>
-          High school diploma with strong grades in Biology, Chemistry, and/or
-          Math
+        Completion of 12 years of formal education (high school certificate or equivalent)
+
         </li>
-        <li>Minimum GPA: 2.5 to 3.0 out of 4.0</li>
+        <li>Minimum GPA: 2.5 to 3.0 out of 4.0 (varies by university)</li>
         <li>
           English Proficiency:
           <ul>
@@ -151,8 +150,8 @@
         </li>
       </ul>
 
-      <h5>For Master’s Programs:</h5>
-      <ul>
+      <h5 class="text-primary fs-4">For Master’s Programs:</h5>
+      <ul class="test-color-dark fs-5">
         <li>Bachelor’s degree in a relevant life sciences or health field</li>
         <li>GPA: 3.0 out of 4.0 (or equivalent)</li>
         <li>
@@ -199,8 +198,8 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Q: Do Health & Life Sciences programs include clinical
-                    training?
+                    Q: What are the most in-demand Business & Management specializations?
+
                   </button>
                 </h2>
                 <div
@@ -210,8 +209,8 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    A: Yes. Many programs include lab sessions, clinical
-                    placements, or internships for hands-on experience.
+                    A: Popular and in-demand specializations include Finance, Marketing, Business Analytics, Supply Chain Management, Human Resources, and International Business.
+
                   </div>
                 </div>
               </div>
@@ -227,7 +226,8 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Q: Can I become a doctor through these programs?
+                    Q: Can I study Business & Management without a background in business?
+
                   </button>
                 </h2>
                 <div
@@ -237,9 +237,8 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    A: Pre-med pathways prepare students for medical school, but
-                    becoming a doctor requires additional qualifications and
-                    licensing.
+                    A: Yes! Many undergraduate programs require only a high school certificate, and most MBA programs accept students from diverse academic backgrounds as long as they meet entry requirements.
+
                   </div>
                 </div>
               </div>
@@ -255,7 +254,8 @@
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Q: What is the job outlook in healthcare fields?
+                    Q: What kind of job opportunities will I have after graduating?
+
                   </button>
                 </h2>
                 <div
@@ -265,9 +265,8 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    A: Excellent. There is a global demand for healthcare
-                    professionals, particularly in nursing, public health, and
-                    biotech.
+                    A: Graduates can pursue roles in finance, marketing, consulting, operations, human resources, and management in multinational companies, startups, and public organizations.
+
                   </div>
                 </div>
               </div>
@@ -283,7 +282,7 @@
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    Q: Are there research opportunities during studies?
+                    Q: Are internships included in the programs?
                   </button>
                 </h2>
                 <div
@@ -293,9 +292,8 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    A: Yes. Many universities provide undergraduate and
-                    graduate-level research opportunities in labs or in
-                    partnership with hospitals.
+                    A: Yes. Many universities offer internship placements or co-op programs as part of their curriculum to give students hands-on industry experience.
+
                   </div>
                 </div>
               </div>
@@ -311,7 +309,7 @@
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    Q: Is English proficiency required for healthcare programs?
+                    Q: Is a Business & Management degree worth the investment?
                   </button>
                 </h2>
                 <div
@@ -321,9 +319,8 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    A: Yes. Strong communication skills are essential, and
-                    applicants must meet English language test score
-                    requirements.
+                    A: Absolutely. Business & Management degrees have strong career prospects and are highly valued across industries worldwide, offering high return on investment and global mobility.
+
                   </div>
                 </div>
               </div>
@@ -349,9 +346,9 @@
           <p class="mb-0">
             Check your eligibility and receive end to end assisstance for FREE!
           </p>
-          <button class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
+          <a href="{{ route('apply_with_us') }}" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
             Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
-          </button>
+          </a>
         </div>
       </div>
       <!-- End of container -->
