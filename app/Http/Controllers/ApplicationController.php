@@ -10,8 +10,8 @@ class ApplicationController extends Controller
     // Admin list
     public function index()
     {
-        $applications = Application::latest()->paginate(10);
-        return view('admin.applications.index', compact('applications'));
+        $applications = Application::all();
+        return view('Admin.pages.application_view', compact('applications'));
     }
 
     // Show single application details

@@ -44,6 +44,19 @@
                 
               </a>
             </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="{{ route('admin.application.index') }}" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Applications</span>
+                </div>
+                
+              </a>
+            </li>
         
 
               {{-- card start here  --}}
