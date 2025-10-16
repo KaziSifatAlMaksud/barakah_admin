@@ -71,7 +71,7 @@
       <h2 class="title mb-4">Business & Management – BSAT</h2>
 
       
-
+      <hr class="my-5" />
       <!-- Introduction -->
       <h3 class="text-primary fs-4">Introduction</h3>
       <p class="test-color-dark fs-5">

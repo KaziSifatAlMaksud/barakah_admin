@@ -125,22 +125,21 @@
                       Courses
                   </a>
 
-                  <!-- Dropdown toggle -->
+                  <!-- Dropdown toggle -->`
                   <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
 
                     <!-- Dropdown menu -->
                   <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                      <li><a href="courses/6.1.businessandManagement.html" class="dropdown-item">Business Management</a></li>
-                      <li><a href="courses/6.2.engineeringAndTechnology.html" class="dropdown-item">Engineering Technology</a></li>
-                      <li><a href="courses/6.3.healthLifeScience.html" class="dropdown-item">Health & Life Sciences</a></li>
-                      <li><a href="courses/6.4.artsHumanities.html" class="dropdown-item">Arts Humanities Social Sciences</a></li>
-                      <li><a href="courses/6.7.LawAndCriminology.html" class="dropdown-item">Law & Criminology</a></li>
-                      <li><a href="courses/6.8.EducationAndTeaching.html" class="dropdown-item">Education & Technology</a></li>
+                      <li><a href="{{ route('courses.engineering') }}" class="dropdown-item">Business Management</a></li>
+                      <li><a href="{{ route('courses.business') }}" class="dropdown-item">Engineering Technology</a></li>
+                       <li><a href="{{ route('courses.hospitality') }}" class="dropdown-item">Hospitality & Tourism</a></li>
+                       <li><a href="{{ route('courses.law') }}" class="dropdown-item">Law & Criminology</a></li>
+                       <li><a href="{{ route('courses.education') }}" class="dropdown-item">Education & Teaching</a></li>
+                       <li><a href="{{ route('courses.arts') }}" class="dropdown-item">Arts Humanities Social Sciences</a></li>
+                       <li><a href="{{ route('courses.health') }}" class="dropdown-item">Health & Life Sciences</a></li>                   
+                      <li><a href="{{ route('courses.environment') }}" class="dropdown-item">Science & Environment</a></li>
                   </ul>
               </div>
-
-
-
            
                <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
              
