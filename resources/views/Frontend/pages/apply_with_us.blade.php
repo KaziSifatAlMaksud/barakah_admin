@@ -81,6 +81,13 @@
             If you have any comments please apply now
           </h1>
         </div>
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert" data-wow-delay="0.4s">
+                <strong>{{ session('success') }}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+
         <div class="row g-5">
           <!-- <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="contact-img d-flex justify-content-center" >
@@ -97,162 +104,158 @@
                 our simple application form to get expert guidance on
                 admissions, visas, scholarships, and travel support. Our team
                 will review your details and assist you every step of the way.
-                <!-- <a
-                  class="text-primary fw-bold"
-                  href="https://htmlcodex.com/contact-form"
-                  >Download Now</a
-                >. -->
+                
               </p>
-              <form>
-                <div class="row g-3">
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Your Name"
-                      />
-                      <label for="name">Your Name</label>
+              <form 
+                  action="{{ route('application.store') }}" 
+                  method="POST" 
+                  enctype="multipart/form-data"
+                  id="applicationForm"
+                >
+                  @csrf
+                  <div class="row g-3">
+
+                    <!-- Name -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control border-0"
-                        id="email"
-                        placeholder="Your Email"
-                      />
-                      <label for="email">Your Email</label>
+
+                    <!-- Email -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="phone"
-                        class="form-control border-0"
-                        id="phone"
-                        placeholder="Phone"
-                      />
-                      <label for="phone">Your Phone</label>
+
+                    <!-- Phone -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Your Phone">
+                        <label for="phone">Your Phone</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Last Education Level"
-                      />
-                      <label for="name">Last Education Level</label>
+
+                    <!-- Last Education Level -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0" id="last_edu" name="last_edu" placeholder="Last Education Level">
+                        <label for="last_edu">Last Education Level</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Your CGPA"
-                      />
-                      <label for="name">Your CGPA</label>
+
+                    <!-- CGPA -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="number" step="0.01" class="form-control border-0" id="cgpa" name="cgpa" placeholder="Your CGPA">
+                        <label for="cgpa">Your CGPA</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Year of Education Complete"
-                      />
-                      <label for="name">Year of Education Complete</label>
+
+                    <!-- Education Year -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="number" min="1900" max="2099" class="form-control border-0" id="edu_year" name="edu_year" placeholder="Year of Education Complete">
+                        <label for="edu_year">Year of Education Complete</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Your Subject of Study"
-                      />
-                      <label for="name">Your Subject of Study</label>
+
+                    <!-- Subject of Study -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0" id="subject_study" name="subject_study" placeholder="Your Subject of Study">
+                        <label for="subject_study">Your Subject of Study</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Which Degree You Want to Pursue"
-                      />
-                      <label for="name">Which Degree You Want to Pursue</label>
+
+                    <!-- Degree You Want to Pursue -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0" id="degree_want" name="degree_want" placeholder="Which Degree You Want to Pursue">
+                        <label for="degree_want">Which Degree You Want to Pursue</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Your IELTS Score"
-                      />
-                      <label for="name">Your IELTS Score</label>
+
+                    <!-- Exam Type -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <select class="form-select border-0" id="exam_type" name="exam_type">
+                          <option value="">Select Exam Type</option>
+                          <option value="IELTS">IELTS</option>
+                          <option value="TOEFL">TOEFL</option>
+                          <option value="GRE">GRE</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <label for="exam_type">Exam Type</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="name"
-                        placeholder="Your TOEFL Score"
-                      />
-                      <label for="name">Your TOEFL Score</label>
+
+                    <!-- Exam Score -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0" id="score" name="score" placeholder="Your Exam Score">
+                        <label for="score">Your Exam Score</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="project"
-                        placeholder="Your GRE Score"
-                      />
-                      <label for="project">Your GRE Score</label>
+
+                    <!-- Preferable University -->
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0" id="preferable_un" name="preferable_un" placeholder="Your Preferable University">
+                        <label for="preferable_un">Your Preferable University</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control border-0"
-                        id="subject"
-                        placeholder="Your Preferable University"
-                      />
-                      <label for="subject">Your Preferable University</label>
+
+                    <!-- Message -->
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <textarea class="form-control border-0" id="message" name="message" placeholder="Leave a message here" style="height: 120px"></textarea>
+                        <label for="message">Message</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control border-0"
-                        placeholder="Leave a message here"
-                        id="message"
-                        style="height: 120px"
-                      ></textarea>
-                      <label for="message">Message</label>
+
+                    <!-- Attachment -->
+                    <div class="col-12">
+                      <label class="form-label fw-semibold mb-1">Upload Attachment (PDF, max 5 MB)</label>
+                      <input type="file" class="form-control border-0" id="attachment" name="attachment" accept="application/pdf" required>
+                      <div id="fileError" class="text-danger small mt-1"></div>
                     </div>
+
+                    <!-- Submit -->
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary w-100 py-3">Submit</button>
+                    </div>
+
                   </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3">Submit</button>
-                  </div>
-                </div>
-              </form>
+                </form>
+
+                <!-- Optional JavaScript validation -->
+                <script>
+                document.getElementById('applicationForm').addEventListener('submit', function (e) {
+                  const fileInput = document.getElementById('attachment');
+                  const file = fileInput.files[0];
+                  const errorDiv = document.getElementById('fileError');
+                  errorDiv.textContent = '';
+
+                  if (file) {
+                    const maxSize = 5 * 1024 * 1024; // 5MB
+                    if (file.size > maxSize) {
+                      e.preventDefault();
+                      errorDiv.textContent = 'File size must not exceed 5 MB.';
+                      return false;
+                    }
+                    if (file.type !== 'application/pdf') {
+                      e.preventDefault();
+                      errorDiv.textContent = 'Only PDF files are allowed.';
+                      return false;
+                    }
+                  }
+                });
+                </script>
+
             </div>
           </div>
         </div>

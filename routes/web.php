@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\SuccessStoryController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\ApplicationController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -23,6 +24,11 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/contact_us', [ContactUsController::class, 'index'])->name('admin.contact.index');
     Route::get('/contact_us/{id}', [ContactUsController::class, 'contact_details'])->name('admin.contact.details');
     Route::delete('/contact_us/{id}', [ContactUsController::class, 'delete_contact'])->name('admin.contact.delete');
+
+
+    Route::get('/applications', [ApplicationController::class, 'index'])->name('admin.application.index');
+    Route::get('/applications/{id}', [ApplicationController::class, 'show'])->name('admin.application.show');
+    Route::delete('/applications/{id}', [ApplicationController::class, 'destroy'])->name('admin.application.delete');
 
     Route::get('/country', [DestinationController::class, 'view_country'])->name('admin.country.index');
     Route::post('/country', [DestinationController::class, 'country_store'])->name('admin.country.store');
@@ -75,6 +81,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/contact', function() { return view('Frontend.pages.contact');})->name('contact');
 
     Route::get('/apply_with_us', function() { return view('Frontend.pages.apply_with_us');})->name('apply_with_us');
+    Route::post('/apply', [ApplicationController::class, 'store'])->name('application.store');
 
 
 

@@ -154,7 +154,7 @@
                   <i class="fas fa-search"></i>
                 </button>
                 <a
-                  href="apply_form.html"
+                  href="{{ route('apply_with_us') }}"
                   class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"
                 >
                   Apply with Us</a
