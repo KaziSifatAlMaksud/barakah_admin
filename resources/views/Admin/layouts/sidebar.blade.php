@@ -140,6 +140,49 @@
             </li>
 
             {{-- card end here  --}}
+             {{-- card start here  --}}
+
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                   <i class="bi bi-people"></i>  
+
+                  </span>
+                  <span class="hide-menu">Partner</span>
+                </div>
+                
+              </a>
+              <ul aria-expanded="false" class="collapse first-level">
+                <li class="sidebar-item">
+                  <a class="sidebar-link justify-content-between"  
+                    href="{{ route('admin.partners.index') }}">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="round-16 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-circle"></i>
+                      </div>
+                      <span class="hide-menu">All Partners</span>
+                    </div>
+                    
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a class="sidebar-link justify-content-between"  
+                    href="{{ route('admin.partners.create') }}">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="round-16 d-flex align-items-center justify-content-center">
+                        <i class="ti ti-circle"></i>
+                      </div>
+                      <span class="hide-menu">Create Partners</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            {{-- card end here  --}}
+
+            {{-- card start here  --}}
             <li class="sidebar-item">
               <a class="sidebar-link justify-content-between"  
                 href="{{ route('admin.country.index') }}" aria-expanded="false">

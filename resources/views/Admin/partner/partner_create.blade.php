@@ -18,13 +18,13 @@
         @csrf
 
         <div class="row g-4">
-          {{-- 🏷️ Partner Name --}}
+          {{-- Partner Name --}}
           <div class="col-md-6">
             <label for="name" class="form-label fw-semibold">Partner Name</label>
             <input type="text" name="name" id="name" class="form-control shadow-sm" placeholder="Enter Partner Name" required>
           </div>
 
-          {{-- ⚙️ Status --}}
+          {{-- Status --}}
           <div class="col-md-6">
             <label for="status" class="form-label fw-semibold">Status</label>
             <select name="status" id="status" class="form-select shadow-sm" required>
@@ -33,15 +33,15 @@
             </select>
           </div>
 
-          {{-- 🖋️ Alt Text --}}
+          {{-- Alt Text --}}
           <div class="col-md-12">
             <label for="alt_text" class="form-label fw-semibold">Alt Text</label>
-            <input type="text" name="alt_text" id="alt_text" class="form-control shadow-sm" placeholder="Enter image alt text">
+            <textarea name="alt_text" id="alt_text" rows="3" class="form-control shadow-sm" placeholder="Enter image alt text..."></textarea>
           </div>
 
           {{-- 🖼️ IMAGE UPLOAD FIELD --}}
           <div class="col-md-12">
-            <label for="img" class="form-label fw-semibold">Partner Logo</label>
+            <label for="img" class="form-label fw-semibold">Partner Image</label>
             <div class="d-flex align-items-center flex-column flex-md-row gap-3">
               <div class="image-preview-wrapper text-center">
                 <img id="imagePreview" src="{{ asset('Admin/assets/images/no-image.png') }}" alt="Preview" class="rounded-3 border" style="width: 160px; height: 160px; object-fit: cover;">
@@ -63,7 +63,7 @@
           </div>
         </div>
 
-        {{-- SUBMIT BUTTONS --}}
+        {{-- Submit Buttons --}}
         <div class="mt-4">
           <button type="submit" class="btn btn-primary px-4">Submit</button>
           <a href="{{ route('admin.partners.index') }}" class="btn btn-secondary px-4">Cancel</a>

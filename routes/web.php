@@ -8,6 +8,7 @@ use App\Http\Controllers\SuccessStoryController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\PartnerController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -42,8 +43,15 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::post('/success_stories', [SuccessStoryController::class, 'store'])->name('admin.success_stories.store');
     Route::delete('/success_stories/{id}', [SuccessStoryController::class, 'destroy'])->name('admin.success_stories.destroy');
 
+    
 
- 
+    Route::get('/partners/list', [PartnerController::class, 'index'])->name('admin.partners.index');
+    Route::get('/partners/create', [PartnerController::class, 'create'])->name('admin.partners.create');
+    Route::get('/partners/{id}', [PartnerController::class, 'show'])->name('admin.partners.show');
+    Route::post('/partners', [PartnerController::class, 'store'])->name('admin.partners.store');
+    Route::delete('/partners/{id}', [PartnerController::class, 'destroy'])->name('admin.partners.destroy');
+
+    
 
     Route::get('/banners/list', [BannerController::class, 'index'])->name('admin.banners.index');
     Route::get('/banners/create', [BannerController::class, 'create'])->name('admin.banners.create');
