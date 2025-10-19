@@ -66,8 +66,7 @@
         <h2 class="title mb-4">Study in UK – Barakah Study Abroad & Tours (BSAT)</h2>
         <p>The United Kingdom is one of the world’s most prestigious education destinations, known for its rich academic history, globally recognized degrees, and innovative teaching methods. Home to some of the world’s top universities, the UK offers students an opportunity to learn from renowned faculty, engage in cutting-edge research, and gain an education that is respected worldwide.</p>
         <p>Studying in the UK also means shorter degree durations, which can save both time and money — most undergraduate degrees take 3 years and master’s degrees just 1 year. Students benefit from a diverse, multicultural environment, excellent student support services, and a chance to experience British culture and heritage.</p>
-          <img
-            src="../img/img_pic/3.2 United Kingdom/Whisk_0ad5784c9c.jpg"
+          <img src="{{ asset('assets/img/img_pic/3.2 United Kingdom/Whisk_0ad5784c9c.jpg') }}"
             alt="Pre and Post Arrival Support"
             class="img-fluid"
           />
@@ -326,7 +325,7 @@
 
 
     <!-- Journey today Start -->
-    <div class="container-fluid f team py-5">
+    <div class="container-fluid f team py-5 bg-light">
       <div class="container py-5">
         <div
           class="text-center mx-auto wow fadeInUp"
@@ -342,7 +341,7 @@
             If you’re ready to begin your academic journey in the USA, BSAT is here to help.
 
           </p>
-          <a href="../apply_form.html" target="_blank" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
+          <a href="{{ route('apply_with_us') }}" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
             Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
           </a>
         </div>

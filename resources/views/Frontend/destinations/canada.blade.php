@@ -428,7 +428,7 @@
 
 
     <!-- Journey today Start -->
-    <div class="container-fluid team py-5">
+    <div class="container-fluid team py-5 ">
       <div class="container py-5">
         <div
           class="text-center mx-auto wow fadeInUp"
@@ -442,7 +442,7 @@
           <p class="mb-0">
             Check your eligibility and receive end to end assisstance for FREE!
           </p>
-          <a href="../apply_form.html" target="_blank" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
+          <a href="{{ route('apply_with_us') }}" class="learn-more btn btn-primary px-5 py-3 mt-5 h6">
             Get a Free Profile Assessment <i class="fa fa-arrow-right"></i>
           </a>
         </div>
