@@ -108,13 +108,13 @@
 
                   <!-- Dropdown menu -->
                   <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                      <li><a href="services/01.service-admission_support.html" class="dropdown-item">Admission Support</a></li>
-                      <li><a href="services/02.service-visa_assistance.html" class="dropdown-item">Visa Assistance</a></li>
-                      <li><a href="services/03.health_life_sciences.html" class="dropdown-item">Health Insurance Assistance</a></li>
-                      <li><a href="services/05.service_scholarships.html" class="dropdown-item">Scholarships & Financial Planning</a></li>
-                     <li><a href="services/07.service_travel_support.html" class="dropdown-item">Travel Support</a></li>
-                      <li><a href="services/06.service_postarrival.html" class="dropdown-item">Pre-Departure & Post-Arrival Support</a></li>
-                      <li><a href="services/08.service_air_tickering.html" class="dropdown-item">Air Ticketing</a></li>
+                      <li><a href="{{ route('services.admission_support') }}" class="dropdown-item">Admission Support</a></li>
+                      <li><a href="{{ route('services.visa_assistance') }}" class="dropdown-item">Visa Assistance</a></li>
+                      <li><a href="{{ route('services.health_insurance') }}" class="dropdown-item">Health Insurance Assistance</a></li>
+                      <li><a href="{{ route('services.scholarships') }}" class="dropdown-item">Scholarships & Financial Planning</a></li>
+                     <li><a href="{{ route('services.travel_support') }}" class="dropdown-item">Travel Support</a></li>
+                      <li><a href="{{ route('services.pre_departure_post_arrival') }}" class="dropdown-item">Pre-Departure & Post-Arrival Support</a></li>
+                      <li><a href="{{ route('services.air_ticketing') }}" class="dropdown-item">Air Ticketing</a></li>
                   </ul>
               </div>
 

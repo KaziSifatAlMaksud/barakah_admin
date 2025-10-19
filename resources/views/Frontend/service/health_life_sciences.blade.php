@@ -64,7 +64,7 @@
                     <h2 class="text-primary fs-4">What We Offer</h2>
                   <p>
                   
-                    <ol>
+                    <ol class="test-color-dark fs-5">
                         <li><b>Understanding Insurance Requirements by Country</b>
                             <p>Every country has its own set of minimum insurance standards for international students. Our team will guide you through.</p>
                             <ul>
@@ -126,13 +126,13 @@
                           
                         </li>
                     </ol>
-                    <p>With BSAT, your student health insurance is not just a requirement — it’s a promise of peace of mind.</p>
+                    <p  class="test-color-dark fs-5">With BSAT, your student health insurance is not just a requirement — it’s a promise of peace of mind.</p>
 
 
                   </p>
                 </div>
-                <h3>Why BSAT?</h3>
-                <ul>
+                <h3 class="text-primary fs-4">Why BSAT?</h3>
+                <ul class="test-color-dark fs-5">
                     <li>10+ years combined experience in handling student visa cases</li>
                     <li>Updated knowledge of embassy rules and refusals</li>
                     <li>Support for SDS & Non-SDS, student route, Schengen visas, and more</li>

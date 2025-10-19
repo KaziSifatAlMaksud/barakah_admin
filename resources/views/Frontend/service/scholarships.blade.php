@@ -48,12 +48,12 @@
           <hr class="my-5">
 
           <div class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4">
-              <img src="../img/img_pic/4.5 Scholarships Financial Planning Updated/Whisk_d7d4cfb80e.jpg" alt="" class="img-fluid">
+              <img src="{{ asset('assets/img/img_pic/4.5 Scholarships Financial Planning Updated/Whisk_d7d4cfb80e.jpg') }} alt="" class="img-fluid">
           </div>
 
           <div class="content">
-              <h2>What We Offer</h2>
-              <ol>
+              <h2 class="text-primary fs-4">What We Offer</h2>
+              <ol class="test-color-dark fs-5">
                   <li><b>Pre-Arrival Housing Consultation</b>
                       <p>Before you fly, our counselors will:</p>
                       <ul>
@@ -114,11 +114,11 @@
                   </li>
               </ol>
 
-              <p>With BSAT, your student accommodation is not just a requirement — it’s a promise of peace of mind.</p>
+              <p class="test-color-dark fs-5">With BSAT, your student accommodation is not just a requirement — it’s a promise of peace of mind.</p>
           </div>
 
-          <h3>Why Choose BSAT?</h3>
-          <ul>
+          <h3 class="text-primary fs-4">Why Choose BSAT?</h3>
+          <ul class="test-color-dark fs-5">
               <li>Years of experience handling international student accommodation</li>
               <li>Network of verified landlords and housing platforms</li>
               <li>Help available for both university and private housing</li>
@@ -129,7 +129,7 @@
               <li>Friendly team that walks you through every step — from submission to stamping</li>
           </ul>
 
-          <p>BSAT doesn’t just get you into a university — we help you feel at home.</p>
+          <p class="test-color-dark fs-5">BSAT doesn’t just get you into a university — we help you feel at home.</p>
       </article>
 
         </div>

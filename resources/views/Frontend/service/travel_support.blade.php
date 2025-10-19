@@ -44,17 +44,18 @@
             </a>
 
             <h2 class="title mb-4">Travel Support – BSAT</h2>
-            <p>BSAT understands that traveling to a new country for higher education is both exciting and challenging. Our Travel Support service is designed to ease the process, offering end-to-end guidance from departure to arrival. We ensure that every student feels safe, confident, and well-prepared throughout their travel journey.</p>
+            <p class="test-color-dark fs-5">BSAT understands that traveling to a new country for higher education is both exciting and challenging. Our Travel Support service is designed to ease the process, offering end-to-end guidance from departure to arrival. We ensure that every student feels safe, confident, and well-prepared throughout their travel journey.</p>
 
             <hr class="my-5">
 
             <div class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4">
-                <img src="../img/img_pic/4.7 Travel Support/Whisk_fef5474d13.jpg" alt="Travel Support" class="img-fluid">
+                <img src="{{ asset('assets/img/img_pic/4.7 Travel Support/Whisk_fef5474d13.jpg') }} alt="Travel Support" class="img-fluid">
+
             </div>
 
             <div class="content">
-                <h2>What We Offer</h2>
-                <ol>
+                <h2 class="text-primary fs-4">What We Offer</h2>
+                <ol class="test-color-dark fs-5">
                     <li><b>Pre-Departure Briefing</b>
                         <ul>
                             <li>Travel documentation checklist (passport, visa, air ticket, etc.)</li>

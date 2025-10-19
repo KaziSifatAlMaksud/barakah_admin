@@ -49,11 +49,12 @@
 
     <div class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4">
         <img src="../img/img_pic/4.6 Pre-Departure Post-Arrival Support/Whisk_7b95e7b26a.jpg" alt="Pre and Post Arrival Support" class="img-fluid">
+              <img src="{{ asset('assets/img/img_pic/4.3 Health Insurance Assistance/Whisk_25b3240db7.jpg') }}" alt="" class="img-fluid">
     </div>
 
       <div class="content">
-          <h2>What We Offer</h2>
-          <ol>
+          <h2 class="text-primary fs-4" >What We Offer</h2>
+          <ol  class="test-color-dark fs-5">
               <li><b>Pre-Departure Services</b>
                   <ul>
                       <li>Comprehensive travel briefing covering country-specific customs, academic expectations, and lifestyle tips</li>
@@ -75,11 +76,11 @@
               </li>
           </ol>
 
-          <p>With BSAT by your side, you’re never alone — from take-off to touchdown and beyond.</p>
+          <p  class="test-color-dark fs-5">With BSAT by your side, you’re never alone — from take-off to touchdown and beyond.</p>
       </div>
 
-      <h3>Why BSAT?</h3>
-      <ul>
+      <h3 class="text-primary fs-4">Why BSAT?</h3>
+      <ul class="test-color-dark fs-5">
           <li>End-to-end support before and after you fly</li>
           <li>Personalized transition help for both students and families</li>
           <li>Decade of experience in international student support</li>
