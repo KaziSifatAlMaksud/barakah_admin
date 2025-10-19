@@ -48,6 +48,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/partners/list', [PartnerController::class, 'index'])->name('admin.partners.index');
     Route::get('/partners/create', [PartnerController::class, 'create'])->name('admin.partners.create');
     Route::get('/partners/{id}', [PartnerController::class, 'show'])->name('admin.partners.show');
+    Route::put('/partners/{id}', [PartnerController::class, 'update'])->name('admin.partners.update');
     Route::post('/partners', [PartnerController::class, 'store'])->name('admin.partners.store');
     Route::delete('/partners/{id}', [PartnerController::class, 'destroy'])->name('admin.partners.destroy');
 
@@ -56,6 +57,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/banners/list', [BannerController::class, 'index'])->name('admin.banners.index');
     Route::get('/banners/create', [BannerController::class, 'create'])->name('admin.banners.create');
     Route::get('/banners/{id}', [BannerController::class, 'show'])->name('admin.banners.show');
+    Route::put('/banners/{id}', [BannerController::class, 'update'])->name('admin.banners.update');
     Route::post('/banners', [BannerController::class, 'store'])->name('admin.banners.store');
     Route::delete('/banners/{id}', [BannerController::class, 'destroy'])->name('admin.banners.destroy');
 

@@ -34,30 +34,81 @@ class BannerController extends Controller
     /**
      * Store a newly created banner in storage.
      */
-  public function store(Request $request)
+    public function store(Request $request)
+    {
+        try {
+            $validated = $request->validate([
+                'title' => 'required|string|max:255',
+                'description' => 'nullable|string',
+                'status' => 'required|in:0,1', // 0 = Inactive, 1 = Active
+                'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            ]);
+
+
+            if ($request->hasFile('image')) {
+                $imageName = time() . '.' . $request->image->extension();
+                $request->image->move(public_path('uploads/banners'), $imageName);
+                $validated['image'] = 'uploads/banners/' . $imageName;
+            }
+
+            \App\Models\Banner::create($validated);
+
+            $banners = \App\Models\Banner::orderBy('id', 'desc')->paginate(10);
+
+            return view('Admin.bannar.bannar_view', [
+                'banners' => $banners,
+                'successMessage' => 'Banner created successfully!',
+            ]);
+
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            // Return back with validation errors
+            return back()->withErrors($e->errors())->withInput();
+        } catch (\Exception $e) {
+            // Return view with error message
+            $banners = \App\Models\Banner::orderBy('id', 'desc')->paginate(10);
+            return view('Admin.banner.bannar_view', [
+                'banners' => $banners,
+                'errorMessage' => 'Something went wrong: ' . $e->getMessage(),
+            ]);
+        }
+    }
+
+ public function update(Request $request, $id)
 {
     try {
+        // 🧾 Validate input
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'status' => 'required|in:0,1', // 0 = Inactive, 1 = Active
+            'status' => 'required|in:0,1',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
+        // 🔍 Find banner
+        $banner = \App\Models\Banner::findOrFail($id);
 
+        // 🖼️ If new image uploaded
         if ($request->hasFile('image')) {
             $imageName = time() . '.' . $request->image->extension();
             $request->image->move(public_path('uploads/banners'), $imageName);
+
+            // Delete old image if exists
+            if ($banner->image && file_exists(public_path($banner->image))) {
+                unlink(public_path($banner->image));
+            }
+
+            // Save new image path
             $validated['image'] = 'uploads/banners/' . $imageName;
         }
 
-        \App\Models\Banner::create($validated);
+        // 🔁 Update banner
+        $banner->update($validated);
 
+        // ✅ Return view with success message
         $banners = \App\Models\Banner::orderBy('id', 'desc')->paginate(10);
-
         return view('Admin.bannar.bannar_view', [
             'banners' => $banners,
-            'successMessage' => 'Banner created successfully!',
+            'successMessage' => 'Banner updated successfully!',
         ]);
 
     } catch (\Illuminate\Validation\ValidationException $e) {
@@ -66,12 +117,14 @@ class BannerController extends Controller
     } catch (\Exception $e) {
         // Return view with error message
         $banners = \App\Models\Banner::orderBy('id', 'desc')->paginate(10);
-        return view('Admin.banner.bannar_view', [
+        return view('Admin.bannar.bannar_view', [
             'banners' => $banners,
             'errorMessage' => 'Something went wrong: ' . $e->getMessage(),
         ]);
     }
 }
+
+
 
 
     /**
@@ -81,7 +134,7 @@ class BannerController extends Controller
     {
         try {
             $banner = Banner::findOrFail($id);
-            return view('admin.banners.show', compact('banner'));
+            return view('Admin.bannar.bannar_details', compact('banner'));
         } catch (\Exception $e) {
             return redirect()
                 ->route('admin.banners.index', ['error' => '⚠️ Banner not found or deleted.']);

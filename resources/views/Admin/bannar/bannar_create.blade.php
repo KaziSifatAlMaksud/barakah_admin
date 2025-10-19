@@ -8,20 +8,20 @@
     <div class="card-body">
       <div class="d-md-flex align-items-center mb-4">
         <div>
-          <h4 class="card-title fw-bold">Add Partner</h4>
-          <p class="card-subtitle text-muted">Create a new partner entry</p>
+          <h4 class="card-title fw-bold">Add Banner</h4>
+          <p class="card-subtitle text-muted">Create a new banner entry</p>
         </div>
       </div>
 
       {{-- FORM START --}}
-      <form action="{{ route('admin.partners.store') }}" method="POST" enctype="multipart/form-data">
+      <form action="{{ route('admin.banners.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
 
         <div class="row g-4">
-          {{-- 🏷️ Partner Name --}}
+          {{-- 🏷️ Banner Title --}}
           <div class="col-md-6">
-            <label for="name" class="form-label fw-semibold">Partner Name</label>
-            <input type="text" name="name" id="name" class="form-control shadow-sm" placeholder="Enter Partner Name" required>
+            <label for="title" class="form-label fw-semibold">Banner Title</label>
+            <input type="text" name="title" id="title" class="form-control shadow-sm" placeholder="Enter Banner Title" required>
           </div>
 
           {{-- ⚙️ Status --}}
@@ -33,22 +33,22 @@
             </select>
           </div>
 
-          {{-- 🖋️ Alt Text --}}
+          {{-- 📝 Description --}}
           <div class="col-md-12">
-            <label for="alt_text" class="form-label fw-semibold">Alt Text</label>
-            <input type="text" name="alt_text" id="alt_text" class="form-control shadow-sm" placeholder="Enter image alt text">
+            <label for="description" class="form-label fw-semibold">Description</label>
+            <textarea name="description" id="description" rows="4" class="form-control shadow-sm" placeholder="Enter Banner Description"></textarea>
           </div>
 
           {{-- 🖼️ IMAGE UPLOAD FIELD --}}
           <div class="col-md-12">
-            <label for="img" class="form-label fw-semibold">Partner Logo</label>
+            <label for="image" class="form-label fw-semibold">Banner Image</label>
             <div class="d-flex align-items-center flex-column flex-md-row gap-3">
               <div class="image-preview-wrapper text-center">
                 <img id="imagePreview" src="{{ asset('Admin/assets/images/no-image.png') }}" alt="Preview" class="rounded-3 border" style="width: 160px; height: 160px; object-fit: cover;">
               </div>
 
               <div>
-                <input type="file" name="img" id="imageInput" class="form-control shadow-sm" accept="image/*" required>
+                <input type="file" name="image" id="imageInput" class="form-control shadow-sm" accept="image/*" required>
                 <div class="mt-2 d-flex gap-2">
                   <button type="button" id="removeImageBtn" class="btn btn-outline-danger btn-sm">
                     <i class="bi bi-trash"></i> Remove
@@ -66,7 +66,7 @@
         {{-- SUBMIT BUTTONS --}}
         <div class="mt-4">
           <button type="submit" class="btn btn-primary px-4">Submit</button>
-          <a href="{{ route('admin.partners.index') }}" class="btn btn-secondary px-4">Cancel</a>
+          <a href="{{ route('admin.banners.index') }}" class="btn btn-secondary px-4">Cancel</a>
         </div>
       </form>
       {{-- FORM END --}}

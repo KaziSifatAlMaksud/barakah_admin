@@ -72,12 +72,55 @@ class PartnerController extends Controller
     {
         try {
             $partner = Partner::findOrFail($id);
-            return view('Admin.partner.partner_edit', compact('partner'));
+            return view('Admin.partner.partner_details', compact('partner'));
         } catch (\Exception $e) {
             return redirect()
                 ->route('admin.partners.index', ['error' => '⚠️ Partner not found or deleted.']);
         }
     }
+
+    public function update(Request $request, $id)
+    {
+        try {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255',
+                'alt_text' => 'nullable|string|max:255',
+                'status' => 'required|in:0,1',
+                'img' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            ]);
+
+            $partner = \App\Models\Partner::findOrFail($id);
+
+
+            if ($request->hasFile('img')) {
+                $imageName = time() . '.' . $request->img->extension();
+                $request->img->move(public_path('uploads/partners'), $imageName);
+                  $validated['img'] = 'uploads/partners/' . $imageName;
+
+                // Delete old image if exists
+                if ($partner->img && file_exists(public_path('uploads/partners/'.$partner->img))) {
+                    unlink(public_path('uploads/partners/'.$partner->img));
+                }
+            }
+
+            $partner->update($validated);
+            $partners = \App\Models\Partner::orderBy('id', 'desc')->paginate(10);
+            return view('Admin.partner.partner_view', [
+                'partners' => $partners,
+                'successMessage' => 'Partner updated successfully!',
+            ]);
+
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return back()->withErrors($e->errors())->withInput();
+        } catch (\Exception $e) {
+            $partners = \App\Models\Partner::orderBy('id', 'desc')->paginate(10);
+            return view('Admin.partner.bannar_view', [
+                'partners' => $partners,
+                'errorMessage' => 'Something went wrong: ' . $e->getMessage(),
+            ]);
+        }
+    }
+
 
     /**
      * Remove the specified partner from storage.
