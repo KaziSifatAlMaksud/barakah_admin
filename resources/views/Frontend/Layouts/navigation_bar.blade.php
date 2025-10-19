@@ -90,10 +90,12 @@
                   <!-- Dropdown toggle -->
                   <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                   <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                      <li><a href="destinations/3.1.StudyInUSA.html" class="dropdown-item">Study in USA</a></li>
-                      <li><a href="destinations/3.2.StudyinUK.html" class="dropdown-item">Study in UK</a></li>
-                      <li><a href="destinations/3.3.studyInCanada.html" class="dropdown-item">Study in Canada</a></li>
-                      <li><a href="destinations/3.4.StudyInEurope.html" class="dropdown-item">Study in Europe</a></li>
+                      <li><a href="{{ route('destinations.usa') }}" class="dropdown-item">Study in USA</a></li>
+                      <li><a href="{{ route('destinations.uk') }}" class="dropdown-item">Study in UK</a></li>
+                      <li><a href="{{ route('destinations.canada') }}" class="dropdown-item">Study in Canada</a></li>
+                      <li><a href="{{ route('destinations.europe') }}" class="dropdown-item">Study in Europe</a></li>
+                      <li><a href="{{ route('destinations.new_zealand') }}" class="dropdown-item">Study in New Zealand</a></li>
+                      <li><a href="{{ route('destinations.australia') }}" class="dropdown-item">Study in Australia</a></li>
                   </ul>
               </div>
 

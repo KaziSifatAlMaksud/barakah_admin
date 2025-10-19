@@ -101,10 +101,19 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/services/health_life_sciences', function() { return view('Frontend.service.health_life_sciences');})->name('services.health_life_sciences');
     Route::get('/services/postarrival', function() { return view('Frontend.service.postarrival');})->name('services.postarrival');
     Route::get('/services/scholarships', function() { return view('Frontend.service.scholarships');})->name('services.scholarships');
-
     Route::get('/services/travel_support', function() { return view('Frontend.service.travel_support');})->name('services.travel_support');
     Route::get('/services/visa_assistance', function() { return view('Frontend.service.visa_assistance');})->name('services.visa_assistance');
+
     Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
+
+
+    //Service Pages
+    Route::get('/destinations/australia', function() { return view('Frontend.destinations.australia');})->name('destinations.australia');
+    Route::get('/destinations/canada', function() { return view('Frontend.destinations.canada');})->name('destinations.canada');
+    Route::get('/destinations/europe', function() { return view('Frontend.destinations.europe');})->name('destinations.europe');
+    Route::get('/destinations/new_zealand', function() { return view('Frontend.destinations.new_zealand');})->name('destinations.new_zealand');
+    Route::get('/destinations/uk', function() { return view('Frontend.destinations.uk');})->name('destinations.uk');
+    Route::get('/destinations/usa', function() { return view('Frontend.destinations.usa');})->name('destinations.usa');
 
 
 
