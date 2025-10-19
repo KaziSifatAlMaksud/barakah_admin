@@ -110,11 +110,11 @@
                   <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                       <li><a href="{{ route('services.admission_support') }}" class="dropdown-item">Admission Support</a></li>
                       <li><a href="{{ route('services.visa_assistance') }}" class="dropdown-item">Visa Assistance</a></li>
-                      <li><a href="{{ route('services.health_insurance') }}" class="dropdown-item">Health Insurance Assistance</a></li>
+                      <li><a href="{{ route('services.health_life_sciences') }}" class="dropdown-item">Health Insurance Assistance</a></li>
                       <li><a href="{{ route('services.scholarships') }}" class="dropdown-item">Scholarships & Financial Planning</a></li>
                      <li><a href="{{ route('services.travel_support') }}" class="dropdown-item">Travel Support</a></li>
-                      <li><a href="{{ route('services.pre_departure_post_arrival') }}" class="dropdown-item">Pre-Departure & Post-Arrival Support</a></li>
-                      <li><a href="{{ route('services.air_ticketing') }}" class="dropdown-item">Air Ticketing</a></li>
+                      <li><a href="{{ route('services.postarrival') }}" class="dropdown-item">Pre-Departure & Post-Arrival Support</a></li>
+                      <li><a href="{{ route('services.air_tickating') }}" class="dropdown-item">Air Ticketing</a></li>
                   </ul>
               </div>
 
@@ -125,7 +125,7 @@
                       Courses
                   </a>
 
-                  <!-- Dropdown toggle -->`
+                  <!-- Dropdown toggle -->
                   <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
 
                     <!-- Dropdown menu -->

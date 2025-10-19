@@ -9,6 +9,7 @@ use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\BookingController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -19,9 +20,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->prefix('admin')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('admin.profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('admin.profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('admin.profile.destroy');
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/contact_us', [ContactUsController::class, 'index'])->name('admin.contact.index');
     Route::get('/contact_us/{id}', [ContactUsController::class, 'contact_details'])->name('admin.contact.details');
@@ -90,7 +91,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/courses/scienceAndEnvironment', function() { return view('Frontend.courses.scienceAndEnvironment');})->name('courses.environment');
     
     Route::get('/contact', function() { return view('Frontend.pages.contact');})->name('contact');
-
     Route::get('/apply_with_us', function() { return view('Frontend.pages.apply_with_us');})->name('apply_with_us');
     Route::post('/apply', [ApplicationController::class, 'store'])->name('application.store');
 
@@ -104,7 +104,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     Route::get('/services/travel_support', function() { return view('Frontend.service.travel_support');})->name('services.travel_support');
     Route::get('/services/visa_assistance', function() { return view('Frontend.service.visa_assistance');})->name('services.visa_assistance');
-
+    Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
 
 
 

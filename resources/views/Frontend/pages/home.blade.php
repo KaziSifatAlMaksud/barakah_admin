@@ -671,7 +671,7 @@
                   "
                 >
                   <img
-                    src="{{ asset('assets/img/about/europe_flag.png') }}"
+                    src="{{ asset('assets/img/about/europe_flug.png') }}"
                     alt="Flag"
                     style="
                       width: 100%;

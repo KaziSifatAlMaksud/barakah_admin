@@ -33,71 +33,87 @@
               <br/>
                To get started, simply fill out the form below with your travel preferences and identification details. Our travel desk will contact you shortly.
               </p>
+
+              @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                  <i class="bi bi-check-circle-fill me-2"></i>
+                  {{ session('success') }}
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              @endif
+
       
 
-              <form enctype="multipart/form-data" class="row g-4 mt-4">
+              <form enctype="multipart/form-data" class="row g-4 mt-4" method="POST" action="{{ route('bookings.store') }}">
+                @csrf
+
                 <!-- Personal Information -->
                 <h4 class="text-primary fs-4 mt-4">Personal Information</h4>
                 <div class="col-md-6">
                   <label for="fullName" class="form-label">Full Name</label>
-                  <input type="text" class="form-control" id="fullName" required>
+                  <input type="text" name="full_name" class="form-control" id="fullName" required>
                 </div>
                 <div class="col-md-6">
                   <label for="passportNumber" class="form-label">Passport Number</label>
-                  <input type="text" class="form-control" id="passportNumber" required>
+                  <input type="text" name="passport_number" class="form-control" id="passportNumber" required>
                 </div>
                 <div class="col-md-6">
                   <label for="nidNumber" class="form-label">NID Number</label>
-                  <input type="text" class="form-control" id="nidNumber" required>
+                  <input type="text" name="nid_number" class="form-control" id="nidNumber" required>
                 </div>
                 <div class="col-md-6">
                   <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="email" required>
+                  <input type="email" name="email" class="form-control" id="email" required>
                 </div>
                 <div class="col-md-6">
                   <label for="whatsapp" class="form-label">WhatsApp Number</label>
-                  <input type="tel" class="form-control" id="whatsapp">
+                  <input type="tel" name="whatsapp" class="form-control" id="whatsapp">
                 </div>
 
                 <!-- Upload Documents -->
                 <h4 class="mt-4">Upload Documents</h4>
                 <div class="col-md-6">
                   <label for="uploadNID" class="form-label">Upload NID (PDF or Image)</label>
-                  <input class="form-control" type="file" id="uploadNID" accept=".pdf,.jpg,.jpeg,.png" required>
+                  <input class="form-control" type="file" name="upload_nid" id="uploadNID" accept=".pdf,.jpg,.jpeg,.png" required>
                 </div>
                 <div class="col-md-6">
                   <label for="uploadPassport" class="form-label">Upload Passport Scan (PDF or Image)</label>
-                  <input class="form-control" type="file" id="uploadPassport" accept=".pdf,.jpg,.jpeg,.png" required>
+                  <input class="form-control" type="file" name="upload_passport" id="uploadPassport" accept=".pdf,.jpg,.jpeg,.png" required>
                 </div>
 
                 <!-- Travel Details -->
                 <h4 class="mt-4">Travel Details</h4>
                 <div class="col-md-6">
                   <label for="departureCity" class="form-label">Preferred Departure City</label>
-                  <input type="text" class="form-control" id="departureCity" required>
+                  <input type="text" name="departure_city" class="form-control" id="departureCity" required>
                 </div>
                 <div class="col-md-6">
                   <label for="destinationCity" class="form-label">Destination City</label>
-                  <input type="text" class="form-control" id="destinationCity" required>
+                  <input type="text" name="destination_city" class="form-control" id="destinationCity" required>
                 </div>
                 <div class="col-md-6">
                   <label for="departureDate" class="form-label">Preferred Departure Date</label>
-                  <input type="date" class="form-control" id="departureDate" required>
+                  <input type="date" name="departure_date" class="form-control" id="departureDate" required>
                 </div>
+                <div class="col-md-6">
+                  <label for="returnDate" class="form-label">Preferred Return Date (optional)</label>
+                  <input type="date" name="return_date" class="form-control" id="returnDate">
+                </div>
+
                 <div class="col-md-6">
                   <label class="form-label d-block">Trip Type</label>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tripType" id="oneWay" value="one-way" checked>
+                    <input class="form-check-input" type="radio" name="trip_type" id="oneWay" value="one-way" checked>
                     <label class="form-check-label" for="oneWay">One-Way</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tripType" id="roundTrip" value="round-trip">
+                    <input class="form-check-input" type="radio" name="trip_type" id="roundTrip" value="round-trip">
                     <label class="form-check-label" for="roundTrip">Round-Trip</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <label for="preferredAirline" class="form-label">Preferred Airline (optional)</label>
-                  <input type="text" class="form-control" id="preferredAirline">
+                  <input type="text" name="preferred_airline" class="form-control" id="preferredAirline">
                 </div>
 
                 <!-- Additional Information -->
@@ -105,28 +121,28 @@
                 <div class="col-md-6">
                   <label class="form-label d-block">Do you need baggage support?</label>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="baggageSupport" id="baggageYes" value="Yes">
+                    <input class="form-check-input" type="radio" name="baggage_support" id="baggageYes" value="Yes">
                     <label class="form-check-label" for="baggageYes">Yes</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="baggageSupport" id="baggageNo" value="No" checked>
+                    <input class="form-check-input" type="radio" name="baggage_support" id="baggageNo" value="No" checked>
                     <label class="form-check-label" for="baggageNo">No</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label d-block">Are you traveling alone or in a group?</label>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="travelGroup" id="travelAlone" value="Alone" checked>
+                    <input class="form-check-input" type="radio" name="travel_group" id="travelAlone" value="Alone" checked>
                     <label class="form-check-label" for="travelAlone">Alone</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="travelGroup" id="travelGroup" value="Group">
+                    <input class="form-check-input" type="radio" name="travel_group" id="travelGroup" value="Group">
                     <label class="form-check-label" for="travelGroup">Group</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <label for="specialRequests" class="form-label">Any Special Requests</label>
-                  <textarea class="form-control" id="specialRequests" rows="3" placeholder="Write any special preferences or concerns here..."></textarea>
+                  <textarea class="form-control" name="special_requests" id="specialRequests" rows="3" placeholder="Write any special preferences or concerns here..."></textarea>
                 </div>
 
                 <!-- Submit -->
@@ -135,6 +151,7 @@
                   <small class="d-block text-muted mt-2">Form data including uploads will be sent to BSAT Travel Support</small>
                 </div>
               </form>
+
             </article>
 
 

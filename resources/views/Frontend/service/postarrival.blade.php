@@ -48,7 +48,6 @@
     <hr class="my-5">
 
     <div class="w-100 h-70 d-flex justify-content-center border align-items-center mb-4">
-        <img src="../img/img_pic/4.6 Pre-Departure Post-Arrival Support/Whisk_7b95e7b26a.jpg" alt="Pre and Post Arrival Support" class="img-fluid">
               <img src="{{ asset('assets/img/img_pic/4.3 Health Insurance Assistance/Whisk_25b3240db7.jpg') }}" alt="" class="img-fluid">
     </div>
 

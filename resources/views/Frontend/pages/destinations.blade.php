@@ -58,7 +58,7 @@
           class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown"
           data-wow-delay="0.3s"
         >
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
 
           <li class="breadcrumb-item active text-primary">Destinations</li>
         </ol>
@@ -75,7 +75,7 @@
           style="max-width: 800px"
         >
           <h4 class="text-primary">Study Abroad with Barakah</h4>
-          <h1 class="display-4 mb-4">Your Trusted Partner</h1>
+          <h1 class="display-4 mb-4">Discover Your Ideal Destinations</h1>
           <p class="mb-0">
             Your gateway to world-class learning – discover top global study
             destinations with Barakah.
