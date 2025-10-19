@@ -91,7 +91,7 @@
                 class="col-md-6 col-lg-6 col-xl-3 team-member service designer wow fadeInUp"
                 data-wow-delay="0.1s"
               >
-                <a href="destinations/3.1.StudyInUSA.html" class="text-decoration-none text-dark wow ">
+                <a href="{{ route('destinations.usa') }}" class="text-decoration-none text-dark wow ">
                   <div class="service-item position-relative">
                     <div class="service-img">
                       <img
@@ -144,7 +144,7 @@
                 class="col-md-6 col-lg-6 col-xl-3 team-member service designer wow fadeInUp"
                 data-wow-delay="0.3s"
             >
-                <a href="destinations/3.2.StudyinUK.html" class="text-decoration-none text-dark">
+                <a href="{{ route('destinations.uk') }}" class="text-decoration-none text-dark">
                     <div class="service-item position-relative">
                         <div class="service-img">
                             <img
@@ -198,7 +198,7 @@
               class="col-md-6 col-lg-6 col-xl-3 team-member service designer wow fadeInUp"
               data-wow-delay="0.5s"
           >
-              <a href="destinations/3.3.studyInCanada.html" class="text-decoration-none text-dark">
+              <a href="{{ route('destinations.canada') }}" class="text-decoration-none text-dark">
                   <div class="service-item position-relative">
                       <div class="service-img">
                           <img
@@ -306,7 +306,7 @@
               class="col-md-6 col-lg-6 col-xl-3 team-member service designer wow fadeInUp"
               data-wow-delay="0.9s"
           >
-              <a href="destinations/3.4.StudyInEurope.html" class="text-decoration-none text-dark">
+              <a href="{{ route('destinations.europe') }}" class="text-decoration-none text-dark">
                   <div class="service-item position-relative">
                       <div class="service-img">
                           <img
