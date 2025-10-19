@@ -1,6 +1,6 @@
 @extends('Frontend.layouts.master')
 
-@section('title', 'About Us - BSAT')
+@section('title', 'Sercices - BSAT')
 
 @section('content')
     <!-- Modal Search Start -->
@@ -111,7 +111,7 @@
                 submission, SOP writing, and follow-up communication. <br />
                 
               </p>
-              <a href="services/01.service-admission_support.html" class="btn btn-primary rounded-pill py-2 px-5"
+              <a href="{{ route('services.admission_support') }}" class="btn btn-primary rounded-pill py-2 px-5"
                 >View details</a
               >
             </div>
@@ -134,7 +134,7 @@
               </p>
 
               <p></p>
-            <a href="services/02.service-visa_assistance.html" class="btn btn-primary rounded-pill py-2 px-5"
+            <a href="{{ route('services.visa_assistance') }}" class="btn btn-primary rounded-pill py-2 px-5"
                 >View details</a
               >
             </div>
@@ -163,7 +163,7 @@
             data-aos-delay="200"
           >
             <img
-              src="img/img_pic/4. Our Services/Whisk_c0d9ea751c.jpg"
+              src="{{ asset('assets/img/img_pic/4.3 Health Insurance Assistance/Whisk_25b3240db7.jpg') }}"
               class="img-fluid rounded"
               alt=""
             />
@@ -181,7 +181,7 @@
          
               </p>
               <p></p>
-                <a href="services/03.health_life_sciences.html" class="btn btn-primary rounded-pill py-2 px-5"
+                <a href="{{ route('services.health_life_sciences') }}" class="btn btn-primary rounded-pill py-2 px-5"
                 >View details</a
               >
             </div>
@@ -196,7 +196,7 @@
             data-aos-delay="200"
           >
             <img
-              src="img/img_pic/4. Our Services/Whisk_8631749c85.jpg"
+               src="{{ asset('assets/img/img_pic/4.5 Scholarships Financial Planning Updated/Whisk_d7d4cfb80e.jpg') }}"
               class="img-fluid rounded"
               alt=""
             />
@@ -213,7 +213,7 @@
                 budgeting and reducing tuition costs. <br />
       
               </p>
-              <a href="services/05.service_scholarships.html" class="btn btn-primary rounded-pill py-2 px-5"
+              <a href="{{ route('services.scholarships') }}" class="btn btn-primary rounded-pill py-2 px-5"
                 >View details</a
               >
             </div>
@@ -236,7 +236,7 @@
                 ensure a smooth journey from home to campus. <br />
               </p>
               <p></p>
-                <a href="services/07.service_travel_support.html" class="btn btn-primary rounded-pill py-2 px-5"
+                <a href="{{ route('services.travel_support') }}" class="btn btn-primary rounded-pill py-2 px-5"
                 >View details</a>
             </div>
           </div>
@@ -247,7 +247,8 @@
             data-aos-delay="200"
           >
             <img
-              src="{{ asset('assets/services/travel.jpeg') }}"
+          
+              src="{{ asset('assets/img/img_pic/4.7 Travel Support/Whisk_cb7e0c9f1c.jpg') }}"
               class="img-fluid rounded"
               alt=""
             />
@@ -270,7 +271,7 @@
                 local banking, job search, and more. <br />
               </p>
               <p></p>
-                <a href="services/06.service_postarrival.html" class="btn btn-primary rounded-pill py-2 px-5"
+                <a href="{{ route('services.postarrival') }}" class="btn btn-primary rounded-pill py-2 px-5"
                 >View details</a
               >
             </div>
@@ -282,7 +283,7 @@
             data-aos-delay="200"
           >
             <img
-              src="img/img_pic/4. Our Services/Whisk_a6a3c57680.jpg"
+              src="{{ asset('assets/img/img_pic/4.6 Pre-Departure Post-Arrival Support/Whisk_7b95e7b26a.jpg') }}"
               class="img-fluid rounded"
               alt=""
             />
@@ -307,7 +308,7 @@
           
               </p>
               <p></p>
-                <a href="services/08.service_air_tickering.html" class="btn btn-primary rounded-pill py-2 px-5"
+                <a href="{{ route('services.air_tickating') }}" class="btn btn-primary rounded-pill py-2 px-5"
                 >View details</a
               >
             </div>
@@ -319,7 +320,7 @@
             data-aos-delay="200"
           >
             <img
-              src="img/img_pic/4. Our Services/Whisk_891f4b22f5.jpg"
+              src="{{ asset('assets/img/img_pic/4.8 Air Ticketing/Whisk_127f9f4254.jpg') }}"
               class="img-fluid rounded"
               alt=""
             />

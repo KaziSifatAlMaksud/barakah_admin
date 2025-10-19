@@ -95,6 +95,17 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::post('/apply', [ApplicationController::class, 'store'])->name('application.store');
 
 
+    //Service Pages
+    Route::get('/services/admission_support', function() { return view('Frontend.service.admission_support');})->name('services.admission_support');
+    Route::get('/services/air_tickating', function() { return view('Frontend.service.air_tickating');})->name('services.air_tickating');
+    Route::get('/services/health_life_sciences', function() { return view('Frontend.service.health_life_sciences');})->name('services.health_life_sciences');
+    Route::get('/services/postarrival', function() { return view('Frontend.service.postarrival');})->name('services.postarrival');
+    Route::get('/services/scholarships', function() { return view('Frontend.service.scholarships');})->name('services.scholarships');
+
+    Route::get('/services/travel_support', function() { return view('Frontend.service.travel_support');})->name('services.travel_support');
+    Route::get('/services/visa_assistance', function() { return view('Frontend.service.visa_assistance');})->name('services.visa_assistance');
+
+
 
 
 
