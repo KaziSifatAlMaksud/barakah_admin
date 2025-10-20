@@ -29,10 +29,25 @@
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
                
               <li class="nav-item dropdown">
-                <a class="nav-link " href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('Admin/assets/images/no-image.png') }}" alt="" width="35" height="35" class="rounded-circle">
+                <a class="nav-link" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false" 
+                  style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                    
+                    <!-- Profile Image -->
+                    <img src="{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('Admin/assets/images/no-image.png') }}" 
+                        alt="Profile" 
+                        width="35" 
+                        height="35" 
+                        class="rounded-circle" 
+                        style="object-fit: cover;">
+
+                    <!-- Name and Role -->
+                    <div style="display: flex; flex-direction: column; line-height: 1;">
+                        <span style="font-weight: 400; font-size: 0.875rem;">{{ Auth::user()->name }}</span>
+                        <small class="text-muted" style="font-size: 0.75rem;">{{ Auth::user()->role }}</small>
+                    </div>
                 </a>
+
+
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
                     <a href="{{ url('admin/profile') }}" class="d-flex align-items-center gap-2 dropdown-item">

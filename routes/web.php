@@ -130,6 +130,10 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
     Route::post('/bookings', [BookingController::class, 'store'])->name('bookings.store');
 
 
+    Route::get('/bookings', [BookingController::class, 'index'])->name('bookings.index');
+    Route::get('/bookings/{id}', [BookingController::class, 'show'])->name('bookings.show');
+    Route::delete('/bookings/{id}', [BookingController::class, 'destroy'])->name('bookings.destroy');
+
     //Service Pages
     Route::get('/destinations/australia', function() { return view('Frontend.destinations.australia');})->name('destinations.australia');
     Route::get('/destinations/canada', function() { return view('Frontend.destinations.canada');})->name('destinations.canada');

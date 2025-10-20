@@ -62,4 +62,50 @@ class BookingController extends Controller
 
         return redirect()->back()->with('success', 'Booking request submitted successfully.');
     }
+
+       public function index()
+    {
+        // Fetch all bookings, latest first
+        $bookings = Booking::orderBy('id', 'desc')->get();
+
+            // Return view with data
+            return view('Admin.booking.booking_view', compact('bookings'));
+    }
+
+        public function show($id)
+    {
+        $booking = Booking::findOrFail($id);
+        return view('Admin.booking.booking_details', compact('booking'));
+    }
+
+
+    public function destroy($id)
+    {
+        try {
+            // Find the booking
+            $booking = \App\Models\Booking::findOrFail($id);
+
+            // Delete NID file if exists
+            if ($booking->nid_file && file_exists(public_path($booking->nid_file))) {
+                unlink(public_path($booking->nid_file));
+            }
+
+            // Delete Passport file if exists
+            if ($booking->passport_file && file_exists(public_path($booking->passport_file))) {
+                unlink(public_path($booking->passport_file));
+            }
+
+            // Delete booking record
+            $booking->delete();
+
+            return redirect()->route('bookings.index')
+                            ->with('success', 'Booking deleted successfully!');
+
+        } catch (\Exception $e) {
+            return redirect()->route('bookings.index')
+                            ->with('error', 'Something went wrong: ' . $e->getMessage());
+        }
+    }
+
+
 }
