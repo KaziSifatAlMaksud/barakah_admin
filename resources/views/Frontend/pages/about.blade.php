@@ -15,7 +15,7 @@
         >
           <h4 class="text-primary">About Us</h4>
           <h1 class="display-4 mb-4">About Us - Barakah</h1>
-          <p class="mb-0">
+          <p class="mb-0 text-color-dark fs-5">
             We are proud to work with industry-leading organizations that trust
             our services and collaborate for mutual success.
           </p>
@@ -81,12 +81,12 @@
           </div>
           <div class="col-lg-6 p-5 wow fadeInRight" data-wow-delay="0.4s">
             <h2 class="fw-bold mb-3">Who We Are</h2>
-            <p class="text-muted">
+            <p class="text-muted text-color-dark fs-5">
               We are a forward-thinking company dedicated to delivering
               top-notch solutions. Our team of passionate professionals brings
               creativity, experience, and technical expertise to every project.
             </p>
-            <p class="text-muted">
+            <p class="text-muted text-color-dark fs-5">
               Our goal is to empower businesses with innovative strategies that
               foster growth and long-term success.
             </p>
@@ -99,7 +99,7 @@
     <section class="py-5 ">
       <div class="container text-center wow fadeInUp" data-wow-delay="0.2s">
          <h1 class="display-4 ">Our Mission & Vision</h1>
-          <p class="mb-5 text-dark wow fadeInUp" data-wow-delay="0.3s" style=" margin:auto;">
+          <p class="mb-5 text-dark wow fadeInUp text-color-dark fs-5" data-wow-delay="0.3s" style=" margin:auto;">
             Our mission is to empower students from all backgrounds to access world-class education abroad through honest counseling, personalized guidance, and transparent support. Our vision is to become a trusted global education partner, breaking barriers and guiding students with integrity, expertise, and lifelong mentorship.
           </p>
    
@@ -136,7 +136,7 @@
   <section class="py-5 bg-light">
   <div class="container text-center">
     <h2 class="display-5 fw-bold wow fadeInLeft" data-wow-delay="0.2s">Why Choose Us</h2>
-    <p class="mb-5 wow fadeInLeft" data-wow-delay="0.3s">Expert guidance, fast reliable service, and a student-first approach.</p>
+    <p class="mb-5 wow fadeInLeft text-color-dark fs-5" data-wow-delay="0.3s">Expert guidance, fast reliable service, and a student-first approach.</p>
     <div class="row g-4">
       
       <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
@@ -179,7 +179,7 @@
     <section class="py-5  mt-5">
       <div class="container text-center pb-5">
         <h2 class="display-4 fw-bold mb-3 wow fadeInRight" data-wow-delay="0.2s">What Makes BSAT Different</h2>
-        <p class="text-muted mb-5 mx-auto wow fadeInRight" data-wow-delay="0.3s" style="max-width:700px;">
+        <p class="text-muted mb-5 mx-auto wow text-color-dark fs-5 fadeInRight" data-wow-delay="0.3s" style="max-width:700px;">
           Honest, student-first counseling, affordable study options, and complete support — from university selection to visa and beyond, with guidance in Dhaka and on-ground help in the USA.
         </p>
 
@@ -243,19 +243,19 @@
         <div class="row align-items-center">
           <!-- Left Side: Text -->
           <div class="col-md-7 wow fadeInRight" data-wow-delay="0.2s">
-            <blockquote class="blockquote fs-6 fst-italic text-primary mb-4" >
+            <blockquote class="blockquote fs-5 fst-italic text-primary mb-4 " >
               “Studying abroad is more than just earning a degree — it’s about
               building a future, shaping identity, and unlocking global
               opportunities. At BSAT, we are not just consultants — we are your
               mentors, your advocates, and your extended family throughout the
               journey.”
             </blockquote>
-            <p>
+            <p class="text-muted text-color-dark fs-5">
               We started this organization with a deep personal commitment: to
               create a platform where students receive ethical, transparent, and
               empowering guidance as they pursue higher education abroad.
             </p>
-            <p>
+            <p class="text-muted text-color-dark fs-5">
               Too often, students are overwhelmed by misinformation, false
               promises, or one-size-fits-all approaches. BSAT was born out of
               the belief that every student’s story is unique, and so should be
@@ -263,22 +263,22 @@
               advice, personalized strategies, and support that continues even
               after you land in your destination country.
             </p>
-            <p>
+            <p  class="text-muted text-color-dark fs-5">
               Our team is not here to “process files.” We are here to shape
               lives. From our base in Dhaka, to our support networks in your
               destination countries, we walk with our students every step of the
               way — helping them find clarity in uncertainty and confidence in
               decision-making.
             </p>
-            <p>
+            <p  class="text-muted text-color-dark fs-5">
               If you’re serious about studying abroad and want guidance that’s
               rooted in honesty and care, we would be honored to help shape your
               future.
             </p>
 
-            <h5 class="mt-4 fw-bold">Warm regards,</h5>
-            <p class="mb-0"><strong>Md Imran Hasan</strong></p>
-            <p class="text-muted">
+            <h5 class="mt-4 fw-bold text-color-dark fs-5">Warm regards,</h5>
+            <p class="mb-0 text-color-dark fs-5"><strong>Md Imran Hasan</strong></p>
+            <p class="text-muted text-color-dark fs-5">
               CEO & Chief Consultant<br />Barakah Study Abroad & Tours (BSAT)
             </p>
           </div>

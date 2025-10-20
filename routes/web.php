@@ -32,7 +32,7 @@ Route::middleware(['auth', 'is_employee'])->prefix('employee')->group(function (
 
 
 Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
-    Route::get('/dashboard', [AuthenticatedSessionController::class, 'dashboard'])->name('admin.dashboard');
+   
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -54,6 +54,7 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
     Route::get('/success_stories/list', [SuccessStoryController::class, 'index'])->name('admin.success_stories.index');
     Route::get('/success_stories/create', [SuccessStoryController::class, 'create'])->name('admin.success_stories.create');
     Route::get('/success_stories/{id}', [SuccessStoryController::class, 'show'])->name('admin.success_stories.show');
+    Route::put('/success_stories/{id}', [SuccessStoryController::class, 'update'])->name('admin.success_stories.update');
     Route::post('/success_stories', [SuccessStoryController::class, 'store'])->name('admin.success_stories.store');
     Route::delete('/success_stories/{id}', [SuccessStoryController::class, 'destroy'])->name('admin.success_stories.destroy');
 

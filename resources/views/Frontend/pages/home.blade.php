@@ -120,62 +120,18 @@
           class="owl-carousel client-carousel wow fadeInUp"
           data-wow-delay="0.2s"
         >
+          @if($partners->count() > 0)
+          @foreach ($partners as $partner)
           <div class="client-item bg-light rounded p-3 text-center">
             <img
-              src="{{ asset('assets/img/client/5.png') }}"
+              src="{{ asset($partner->img) }}"
               class="img-fluid rounded"
               style="max-height: auto"
-              alt="Client 1"
+              alt="{{ $partner->name }}"
             />
           </div>
-          <div class="client-item bg-light rounded p-3 text-center">
-            <img
-              src="{{ asset('assets/img/client/6.png') }}"
-              class="img-fluid rounded"
-              style="max-height: auto"
-              alt="Client 2"
-            />
-          </div>
-          <div class="client-item bg-light rounded p-3 text-center">
-            <img
-              src="{{ asset('assets/img/client/7.png') }}"
-              class="img-fluid rounded"
-              style="max-height: auto"
-              alt="Client 3"
-            />
-          </div>
-          <div class="client-item bg-light rounded p-3 text-center">
-            <img
-              src="{{ asset('assets/img/client/8.png') }}"
-              class="img-fluid rounded"
-              style="max-height: auto"
-              alt="Client 4"
-            />
-          </div>
-          <div class="client-item bg-light rounded p-3 text-center">
-            <img
-              src="{{ asset('assets/img/client/9.png') }}"
-              class="img-fluid rounded"
-              style="max-height: auto"
-              alt="Client 5"
-            />
-          </div>
-          <div class="client-item bg-light rounded p-3 text-center">
-            <img
-              src="{{ asset('assets/img/client/10.png') }}"
-              class="img-fluid rounded"
-              style="max-height: auto"
-              alt="Client 5"
-            />
-          </div>
-          <div class="client-item bg-light rounded p-3 text-center">
-            <img
-              src="{{ asset('assets/img/client/11.png') }}"
-              class="img-fluid rounded"
-              style="max-height: auto"
-              alt="Client 5"
-            />
-          </div>
+          @endforeach
+          @endif
           <!-- Add more items as needed -->
         </div>
       </div>
@@ -772,13 +728,15 @@
           class="owl-carousel testimonial-carousel wow fadeInUp"
           data-wow-delay="0.2s"
         >
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0" style="height: 350px">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="{{ asset('assets/img/story/Iqbal.png') }}"
-                    class="img-fluid h-100 rounded"
+        @if ($SuccessStories->count() > 0)
+          @foreach ($SuccessStories as $story)
+            <div class="testimonial-item bg-light rounded">
+              <div class="row g-0" style="height: 350px">
+                <div class="col-4 col-lg-4 col-xl-3">
+                  <div class="h-100">
+                    <img
+                      src="{{ asset($story->img) }}"
+                      class="img-fluid h-100 rounded"
                     style="object-fit: cover"
                     alt=""
                   />
@@ -786,28 +744,80 @@
               </div>
               <div class="col-8 col-lg-8 col-xl-9">
                 <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Md Iqbal Hossain</h4>
-                  <p class="mb-3">Success Story #1</p>
+                  <h4 class="text-dark mb-0">@if($story->name) {{ $story->name }} @endif</h4>
+                  <p class="mb-3">Success Story #{{ $story->id }}</p>
 
-                  <p>
-                    <i
-                      class="fas fa-graduation-cap"
+                  @if ($story->university_name)
+                    <p>
+                        <i
+                      class="fas fa-university"
                       style="color: #007bff; margin-right: 8px"
                     ></i>
-                    University of Toledo, USA
-                  </p>
+                   
+                      {{ $story->university_name }}
+                    </p>
+                  @endif
+                  @if($story->scholarship)
+                    <p>
+                      <i
+                        class="fas fa-money-bill-wave"
+                        style="color: #007bff; margin-right: 8px"
+                      ></i>
+                      {{ $story->scholarship }}% Tuition Waiver
+                    </p>
+                  @endif
+                  @if($story->scholarship)
+                    <p>
+                         <i
+                        class="fas fa-graduation-cap"
+                        style="color: #007bff; margin-right: 8px"
+                      ></i>
+                      {{ $story->department }}
+                    </p>
+                  @endif
 
-                  <p>
-                    <i
-                      class="fas fa-money-bill-wave"
+                   @if($story->CGPA)
+                    <p>
+                        <i class="fas fa-chart-line"
+                          style="color: #007bff; margin-right: 8px"
+                        ></i>
+                      CGPA: {{ $story->CGPA }}
+                    </p>
+                  @endif
+
+                   @if($story->country)
+                    <p>
+                        <i
+                      class="fas fa-plane-departure"
                       style="color: #007bff; margin-right: 8px"
                     ></i>
-                    50% Tuition Waiver
-                  </p>
+                      {{ $story->country }}
+                    </p>                  
+                  @endif
+                   @if($story->achivement)
+                    <p>
+                         <i
+                        class="fas fa-graduation-cap"
+                        style="color: #007bff; margin-right: 8px"
+                      ></i>
+                      {{ $story->achivement }}
+                    </p>                  
+                  @endif
+                   @if($story->relocated == 1)
+                    <p>
+                        <i
+                          class="fas fa-users"
+                          style="color: #007bff; margin-right: 8px"
+                        ></i>
+                        Successfully Relocated with Spouse
+                    </p>                  
+                  @endif
                 </div>
               </div>
             </div>
           </div>
+        @endforeach
+        @endif
           <div class="testimonial-item bg-light rounded">
             <div class="row g-0" style="height: 350px">
               <div class="col-4 col-lg-4 col-xl-3">
@@ -861,10 +871,7 @@
                   </p>
 
                   <p class="mb-0">
-                    <i
-                      class="fas fa-plane-departure"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
+                  
                     United States
                   </p>
                 </div>

@@ -41,7 +41,7 @@ class SuccessStoryController extends Controller
             'country' => 'nullable|string|max:255',
             'achivement' => 'nullable|string',
             'relocated' => 'nullable|boolean',
-            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:500000',
         ]);
 
         // ✅ Step 2: Handle image upload (if provided)
@@ -59,7 +59,7 @@ class SuccessStoryController extends Controller
 
         return view('Admin.pages.success_storys', [
             'successStories' => $successStories,
-            'successMessage' => '✅ Success story created successfully!',
+            'successMessage' => 'Success story created successfully!',
         ]);
 
     } catch (\Illuminate\Validation\ValidationException $e) {
@@ -80,43 +80,72 @@ class SuccessStoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $story = SuccessStory::findOrFail($id);
+        return view('Admin.pages.success_storys_details', compact('story'));
     }
-
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
-    }
+        try {
+            $story = SuccessStory::findOrFail($id);
 
-    /**
+            $validated = $request->validate([
+                'name' => 'required|string|max:255',
+                'department' => 'nullable|string|max:255',
+                'university_name' => 'nullable|string|max:255',
+                'scholarship' => 'nullable|string|max:255',
+                'CGPA' => 'nullable|numeric|min:0|max:10',
+                'country' => 'nullable|string|max:255',
+                'achivement' => 'nullable|string',
+                'relocated' => 'nullable|boolean',
+                'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5000',
+            ]);
+
+            if ($request->hasFile('image')) {
+                // Delete old image if exists
+                if ($story->img && file_exists(public_path($story->img))) {
+                    unlink(public_path($story->img));
+                }
+
+                $imageName = time() . '.' . $request->image->extension();
+                $request->image->move(public_path('uploads/success_stories'), $imageName);
+                $validated['img'] = 'uploads/success_stories/' . $imageName;
+            }
+
+            $story->update($validated);
+
+            return redirect()
+                ->route('admin.success_stories.index')
+                ->with('success', '✅ Success story updated successfully!');
+        } catch (\Exception $e) {
+            return back()->with('error', 'Something went wrong: ' . $e->getMessage());
+        }
+    }
+ /**
      * Remove the specified resource from storage.
      */
     public function destroy($id)
     {
         try {
-            $story = \App\Models\SuccessStory::findOrFail($id);
-            if ($story->image && file_exists(public_path($story->image))) {
-                unlink(public_path($story->image));
+            $story = SuccessStory::findOrFail($id);
+
+            if ($story->img && file_exists(public_path($story->img))) {
+                unlink(public_path($story->img));
             }
 
             $story->delete();
 
             return redirect()
                 ->route('admin.success_stories.index')
-                ->with('success', 'Success story deleted successfully!');
+                ->with('success', '✅ Success story deleted successfully!');
         } catch (\Exception $e) {
             return redirect()
                 ->route('admin.success_stories.index')
