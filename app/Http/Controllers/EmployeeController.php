@@ -8,7 +8,6 @@ class EmployeeController extends Controller
 {
     public function dashboard()
     {
-        dd("sadfasdfadsfadsf");
         return view('Employee.pages.dashboard');
     }
 }

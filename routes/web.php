@@ -12,13 +12,14 @@ use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-// Route::get('/dashboard', function () {
-//     return view('Admin.pages.dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('Admin.pages.dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 
 
@@ -30,7 +31,7 @@ Route::middleware(['auth', 'is_employee'])->prefix('employee')->group(function (
 
 
 Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
-    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/dashboard', [AuthenticatedSessionController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -72,6 +73,15 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
     Route::put('/banners/{id}', [BannerController::class, 'update'])->name('admin.banners.update');
     Route::post('/banners', [BannerController::class, 'store'])->name('admin.banners.store');
     Route::delete('/banners/{id}', [BannerController::class, 'destroy'])->name('admin.banners.destroy');
+
+
+        // create user routes
+        Route::get('/users', [UserController::class, 'index'])->name('admin.users.index');
+        Route::get('/users/create', [UserController::class, 'create'])->name('admin.users.create');
+        Route::post('/users', [UserController::class, 'store'])->name('admin.users.store');
+        Route::get('/users/{id}', [UserController::class, 'show'])->name('admin.users.show');
+        Route::put('/users/{id}', [UserController::class, 'update'])->name('admin.users.update');
+        Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('admin.users.destroy');
 
 
 });
