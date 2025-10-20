@@ -33,32 +33,7 @@
             <!-- ---------------------------------- -->
             <!-- Dashboard -->
             <!-- ---------------------------------- -->
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between"  
-                href="{{ route('admin.contact.index') }}" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <i class="ti ti-aperture"></i>
-                  </span>
-                  <span class="hide-menu">Contact Us</span>
-                </div>
-                
-              </a>
-            </li>
-
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between"  
-                href="{{ route('admin.application.index') }}" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <i class="ti ti-aperture"></i>
-                  </span>
-                  <span class="hide-menu">Applications</span>
-                </div>
-                
-              </a>
-            </li>
-        
+            
 
               {{-- card start here  --}}
 
@@ -226,6 +201,10 @@
             </li>
 
             {{-- card end here  --}}
+              <li class="nav-small-cap">
+              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
+              <span class="hide-menu">Control Panel</span>
+            </li>
 
             {{-- card start here  --}}
             <li class="sidebar-item">
@@ -233,7 +212,7 @@
                 href="{{ route('admin.country.index') }}" aria-expanded="false">
                 <div class="d-flex align-items-center gap-3">
                   <span class="d-flex">
-                    <i class="ti ti-aperture"></i>
+                    <i class="ti ti-world"></i>
                   </span>
                   <span class="hide-menu">Country</span>
                 </div>
@@ -249,7 +228,33 @@
               <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
               <span class="hide-menu">User Response</span>
             </li>
-          
+          <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="{{ route('admin.contact.index') }}" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-message-circle"></i>
+
+                  </span>
+                  <span class="hide-menu">Contact Us</span>
+                </div>
+                
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="{{ route('admin.application.index') }}" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-file-text"></i>
+                  </span>
+                  <span class="hide-menu">Applications</span>
+                </div>
+                
+              </a>
+            </li>
+        
           
            
            
