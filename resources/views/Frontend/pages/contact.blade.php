@@ -44,6 +44,7 @@
                     <h4 class="text-primary">Contact Us</h4>
                     <h1 class="display-4 mb-4">If you have any comments please apply now</h1>
                 </div>
+               
                 <div class="row g-5">
                     <!-- <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="contact-img d-flex justify-content-center" >
@@ -110,6 +111,12 @@
                         <div>
                             <h4 class="text-primary">Send Your Message</h4>
                             <p class="mb-4"> Contact us today and let us know your queries. From admission to arrival, BSAT is your trusted partner in creating a smooth and stress-free study abroad journey. We’re here to guide you every step of the way.</p>
+                             @if (session('success'))
+                                <div class="alert alert-success alert-dismissible fade show" role="alert" data-wow-delay="0.4s">
+                                    <strong>{{ session('success') }}</strong>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            @endif
                             <form action="{{ route('frontend.contact.store') }}" method="POST">
 
                                 @csrf

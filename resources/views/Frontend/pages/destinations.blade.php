@@ -48,6 +48,7 @@
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb_background">
       <div class="container text-center py-5" style="max-width: 900px">
+      
         <h4
           class="text-white display-4 mb-4 wow fadeInDown"
           data-wow-delay="0.1s"
@@ -69,11 +70,19 @@
     <!-- Team Start -->
     <div class="container-fluid team py-5">
       <div class="container py-5">
+
+
         <div
           class="text-center mx-auto pb-5 wow fadeInUp"
           data-wow-delay="0.2s"
           style="max-width: 800px"
         >
+             @if (session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert" data-wow-delay="0.4s">
+                        <strong>{{ session('success') }}</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
           <h4 class="text-primary">Study Abroad with Barakah</h4>
           <h1 class="display-4 mb-4">Discover Your Ideal Destinations</h1>
           <p class="mb-0">
@@ -589,18 +598,13 @@
           <div class="col-xl-6 col-sm-12 wow fadeInRight" data-wow-delay="0.4s">
             <div>
               <h4 class="text-primary">Send Your Message</h4>
-                @if(isset($success))
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    {{ $success }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-              @endif
-            <form action="{{ route('frontend.contact.store') }}" method="POST">
+             
+              <form action="{{ route('frontend.contact.store') }}" method="POST">
               @csrf
                 <div class="row g-3">
                   <div class="col-lg-12 col-xl-6">
                     <div class="form-floating">
-                         <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name">
+                      <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name">
                       <label for="name">Your Name</label>
                     </div>
                   </div>
@@ -612,13 +616,13 @@
                   </div>
                   <div class="col-lg-12 col-xl-6">
                     <div class="form-floating">
-                      <input type="phone" class="form-control border-0" id="phone" name="phone" placeholder="Phone">
+                       <input type="phone" class="form-control border-0" id="phone" name="phone" placeholder="Phone">
                       <label for="phone">Your Phone</label>
                     </div>
                   </div>
                   <div class="col-lg-12 col-xl-6">
                     <div class="form-floating">
-                      <input type="text" class="form-control border-0" id="project" name="project_option" placeholder="Project">
+                       <input type="text" class="form-control border-0" id="project" name="project_option" placeholder="Project">
                       <label for="project">Your Project</label>
                     </div>
                   </div>
@@ -630,7 +634,7 @@
                   </div>
                   <div class="col-12">
                     <div class="form-floating">
-                         <textarea class="form-control border-0" placeholder="Leave a message here" name="message" id="message" style="height: 120px"></textarea>
+                          <textarea class="form-control border-0" placeholder="Leave a message here" name="message" id="message" style="height: 120px"></textarea>
                       <label for="message">Message</label>
                     </div>
                   </div>
