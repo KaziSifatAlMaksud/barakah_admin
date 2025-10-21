@@ -75,7 +75,7 @@
 
       <!-- Introduction -->
       <h3 class="text-primary fs-4">Introduction</h3>
-      <p class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">
         Make a Difference in the World of Healthcare and Scientific Discovery.
         <br />
         Health & Life Sciences programs are designed for students who are
@@ -101,7 +101,7 @@
 
       <!-- Popular Programs -->
       <h3 class="text-primary fs-4">Popular Programs</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Nursing</li>
         <li>Public Health</li>
         <li>Biomedical Science</li>
@@ -118,8 +118,8 @@
 
       <!-- Career Pathways -->
       <h3 class="text-primary fs-4">Career Pathways</h3>
-      <p class="test-color-dark fs-5">Graduates in Health & Life Sciences can work in:</p>
-      <ul class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">Graduates in Health & Life Sciences can work in:</p>
+      <ul class="test-color-dark fs-6">
         <li>Hospitals & Clinics</li>
         <li>Pharmaceutical Companies</li>
         <li>Research & Diagnostic Laboratories</li>
@@ -128,7 +128,7 @@
         <li>Public Health Policy & Advocacy</li>
         <li>Biotech & Biomedical Research Firms</li>
       </ul>
-      <p class="test-color-dark fs-5">These programs offer high employability and global impact.</p>
+      <p class="test-color-dark fs-6">These programs offer high employability and global impact.</p>
 
       <hr class="my-5" />
 
@@ -136,7 +136,7 @@
       <h3>Entry Requirements</h3>
      <hr class="my-5" />
       <h5 class="text-primary fs-4" >For Bachelor’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>
           High school diploma with strong grades in Biology, Chemistry, and/or
           Math
@@ -154,7 +154,7 @@
       </ul>
 
       <h5 class="text-primary fs-4">For Master’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Bachelor’s degree in a relevant life sciences or health field</li>
         <li>GPA: 3.0 out of 4.0 (or equivalent)</li>
         <li>

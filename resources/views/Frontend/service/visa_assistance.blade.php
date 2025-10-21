@@ -66,7 +66,7 @@
                     <h2 class="text-primary fs-4">Our Student Visa Services Include:</h2>
                   <p>
                   
-                    <ol class="test-color-dark fs-5">
+                    <ol class="test-color-dark fs-6">
                         <li><b>Tailored Visa Guidance</b>
                             <p>We explain exactly what you need for your chosen country — whether it's the USA, UK, Canada, Australia, or Europe — including financial, academic, and health requirements.</p>
                         </li>
@@ -102,7 +102,7 @@
                   </p>
                 </div>
                 <h3 class="text-primary fs-4">Why BSAT?</h3>
-                <ul class="test-color-dark fs-5">
+                <ul class="test-color-dark fs-6">
                     <li>10+ years combined experience in handling student visa cases</li>
                     <li>Updated knowledge of embassy rules and refusals</li>
                     <li>Support for SDS & Non-SDS, student route, Schengen visas, and more</li>

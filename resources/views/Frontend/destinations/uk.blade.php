@@ -44,18 +44,7 @@
     </div>
     <!-- Modal Search End -->
 
-    <!-- Header Start -->
-    <!-- <div class="container-fluid bg-breadcrumb_service">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          
-                    <li class="breadcrumb-item active text-primary">Service</li>
-                </ol>    
-            </div>
-        </div> -->
-    <!-- Header End -->
+  
 
  
     <article class="container article my-5">
@@ -63,19 +52,22 @@
             <strong><i class="bi bi-arrow-left me-2"></i> Back</strong>
         </a>
 
+   
+
         <h2 class="title mb-4">Study in UK – Barakah Study Abroad & Tours (BSAT)</h2>
-        <p>The United Kingdom is one of the world’s most prestigious education destinations, known for its rich academic history, globally recognized degrees, and innovative teaching methods. Home to some of the world’s top universities, the UK offers students an opportunity to learn from renowned faculty, engage in cutting-edge research, and gain an education that is respected worldwide.</p>
-        <p>Studying in the UK also means shorter degree durations, which can save both time and money — most undergraduate degrees take 3 years and master’s degrees just 1 year. Students benefit from a diverse, multicultural environment, excellent student support services, and a chance to experience British culture and heritage.</p>
+        <hr class="my-5">
+        <p class="test-color-dark fs-6">The United Kingdom is one of the world’s most prestigious education destinations, known for its rich academic history, globally recognized degrees, and innovative teaching methods. Home to some of the world’s top universities, the UK offers students an opportunity to learn from renowned faculty, engage in cutting-edge research, and gain an education that is respected worldwide.</p>
+        <p class="test-color-dark fs-6">Studying in the UK also means shorter degree durations, which can save both time and money — most undergraduate degrees take 3 years and master’s degrees just 1 year. Students benefit from a diverse, multicultural environment, excellent student support services, and a chance to experience British culture and heritage.</p>
           <img src="{{ asset('assets/img/img_pic/3.2 United Kingdom/Whisk_0ad5784c9c.jpg') }}"
             alt="Pre and Post Arrival Support"
             class="img-fluid"
           />
-        <p>With the introduction of the Post-Study Work Visa (Graduate Route), students can now stay and work in the UK for up to 2 years after graduation — enhancing their career prospects and immigration pathways.</p>
+        <p class="test-color-dark fs-6">With the introduction of the Post-Study Work Visa (Graduate Route), students can now stay and work in the UK for up to 2 years after graduation — enhancing their career prospects and immigration pathways.</p>
 
         <hr class="my-5">
 
-        <h3>7 Reasons to Study in the UK</h3>
-        <ol>
+        <h3 class="text-primary fs-4">7 Reasons to Study in the UK</h3>
+        <ol class="test-color-dark fs-6">
             <li><b>Globally Respected Universities</b> – UK institutions like Oxford, Cambridge, and Imperial College London consistently rank among the world’s best, offering degrees recognized worldwide.</li>
             <li><b>Shorter Course Duration</b> – Most bachelor’s programs take just 3 years, and master’s degrees can be completed in 1 year, helping reduce tuition and living costs.</li>
             <li><b>Post-Study Work Opportunities</b> – The Graduate Route Visa allows international students to stay and work in the UK for up to 2 years after graduation (3 years for PhD graduates).</li>
@@ -87,31 +79,34 @@
 
         <hr class="my-5">
 
-        <h3>Cost of Studying in the UK</h3>
-        <h5>Estimated Tuition Fees (Per Year)</h5>
+        <h3 class="text-primary fs-4">Cost of Studying in the UK</h3>
+        
+        <hr class="my-5">
+
+        <h5 class="text-primary fs-5">Estimated Tuition Fees (Per Year)</h5>
         <table class="table table-bordered table-striped">
-            <thead class="table-primary">
-            <tr>
+            <thead class="table-primary ">
+            <tr >
                 <th>Program Level</th>
                 <th>Tuition Range (£)</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody  class="test-color-dark fs-6">
             <tr><td>Bachelor’s</td><td>£10,000 – £18,000</td></tr>
             <tr><td>Master’s</td><td>£11,000 – £20,000</td></tr>
             <tr><td>Doctorate (PhD)</td><td>£15,000 – £25,000</td></tr>
             </tbody>
         </table>
 
-        <h5 class="mt-4">Estimated Living Expenses (Per Month)</h5>
+        <h5 class="mt-4 text-primary ">Estimated Living Expenses (Per Month)</h5>
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
-            <tr>
+            <tr class="table-primary ">
                 <th>City</th>
                 <th>Estimated Cost (£)</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody class="test-color-dark fs-6">
             <tr><td>London</td><td>£1,200 – £1,500</td></tr>
             <tr><td>Other cities</td><td>£800 – £1,200</td></tr>
             </tbody>
@@ -119,18 +114,18 @@
 
         <hr class="my-5">
 
-        <h3>Admission Requirements</h3>
-        <p>To apply to a UK university or college, international students must meet academic eligibility, language proficiency, and documentation standards set by the institution. Requirements vary by level (undergraduate, postgraduate, or PhD), but most universities follow a similar structure.</p>
+        <h3 class="text-primary fs-4">Admission Requirements</h3>
+        <p class="test-color-dark fs-6">To apply to a UK university or college, international students must meet academic eligibility, language proficiency, and documentation standards set by the institution. Requirements vary by level (undergraduate, postgraduate, or PhD), but most universities follow a similar structure.</p>
 
-        <h5>Undergraduate (Bachelor’s)</h5>
-        <ul>
+        <h5  class="text-primary fs-4">Undergraduate (Bachelor’s)</h5>
+        <ul class="test-color-dark fs-6">
             <li>Completed 12 years of schooling (HSC or equivalent)</li>
             <li>Minimum GPA or grade requirement (varies by university)</li>
             <li>Proof of English language proficiency</li>
         </ul>
 
-        <h5>Postgraduate (Master’s)</h5>
-        <ul>
+        <h5 class="text-primary fs-4">Postgraduate (Master’s)</h5>
+        <ul class="test-color-dark fs-6">
             <li>Bachelor’s degree from a recognized institution</li>
             <li>Minimum 2.75 – 3.5 CGPA (depending on university)</li>
             <li>English language test results (IELTS or equivalent)</li>
@@ -138,15 +133,15 @@
             <li>1–2 Letters of Recommendation (LORs)</li>
         </ul>
 
-        <h5>PhD Programs</h5>
-        <ul>
+        <h5 class="text-primary fs-4">PhD Programs</h5>
+        <ul class="test-color-dark fs-6">
             <li>Master’s degree with strong academic background</li>
             <li>Research proposal and academic references</li>
             <li>Supervisor acceptance (in some cases)</li>
             <li>Minimum English Language Requirements</li>
         </ul>
 
-        <h5>English Language Test Scores</h5>
+        <h5 class="text-primary fs-4">English Language Test Scores</h5>
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
             <tr>
@@ -165,8 +160,8 @@
 
         <hr class="my-5">
 
-        <h3>Visa Requirements (Student Visa)</h3>
-        <p>International students must apply for a Student Visa through the UKVI system. BSAT assists with document preparation, financial verification, visa application, and interview support.</p>
+        <h3 class="text-primary fs-4">Visa Requirements (Student Visa)</h3>
+        <p class="test-color-dark fs-6">International students must apply for a Student Visa through the UKVI system. BSAT assists with document preparation, financial verification, visa application, and interview support.</p>
 
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
@@ -190,7 +185,7 @@
 
         <hr class="my-5">
 
-        <h3>Intakes in the UK</h3>
+        <h3 class="text-primary fs-4">Intakes in the UK</h3>
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
             <tr>
@@ -209,7 +204,7 @@
 
         <hr class="my-5">
 
-        <h3>Post-Study Work Opportunities (Graduate Route)</h3>
+        <h3 class="text-primary fs-4">Post-Study Work Opportunities (Graduate Route)</h3>
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
             <tr>
@@ -226,8 +221,8 @@
 
         <hr class="my-5">
 
-        <h3>Scholarships in the UK</h3>
-        <p>The UK offers a wide range of scholarships, bursaries, and financial aid. BSAT assists students in identifying and applying for scholarships that align with their qualifications and career goals.</p>
+        <h3 class="text-primary fs-4">Scholarships in the UK</h3>
+        <p class="test-color-dark fs-6">The UK offers a wide range of scholarships, bursaries, and financial aid. BSAT assists students in identifying and applying for scholarships that align with their qualifications and career goals.</p>
 
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
@@ -247,7 +242,7 @@
 
         <hr class="my-5">
 
-        <h3>Top Courses to Study in the UK</h3>
+        <h3 class="text-primary fs-4">Top Courses to Study in the UK</h3>
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
             <tr>
@@ -271,7 +266,7 @@
 
         <hr class="my-5">
 
-        <h3>Top Universities to Study in the UK</h3>
+        <h3 class="text-primary fs-4">Top Universities to Study in the UK</h3>
         <table class="table table-bordered table-striped">
             <thead class="table-primary">
             <tr>

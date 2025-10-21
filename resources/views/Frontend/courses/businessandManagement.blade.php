@@ -74,7 +74,7 @@
       <hr class="my-5" />
       <!-- Introduction -->
       <h3 class="text-primary fs-4">Introduction</h3>
-      <p class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">
         Shape Global Business with a World-Class Education.
         <br />
       Business & Management is one of the most powerful academic fields that opens doors to countless career opportunities in today's competitive and interconnected world. Whether you're interested in finance, marketing, leadership, or launching your own startup — a degree in business equips you with the skills, knowledge, and confidence to thrive across industries and continents.At BSAT, we guide you toward the best universities and programs that blend academic excellence with real-world relevance. From foundational courses to globally recognized MBAs, our partner institutions help you build the mindset of a future business leader.
@@ -94,7 +94,7 @@
 
       <!-- Popular Programs -->
       <h3 class="text-primary fs-4">Popular Programs</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Bachelor of Business Administration (BBA)</li>
         <li>Master of Business Administration (MBA)</li>
         <li>International Business</li>
@@ -111,8 +111,8 @@
 
       <!-- Career Pathways -->
       <h3 class="text-primary fs-4">Career Pathways</h3>
-      <p class="test-color-dark fs-5">Graduates of Business & Management programs can pursue careers in:</p>
-      <ul class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">Graduates of Business & Management programs can pursue careers in:</p>
+      <ul class="test-color-dark fs-6">
         <li>Banking and Finance</li>
         <li>Marketing & Advertising</li>
         <li>Consulting</li>
@@ -124,7 +124,7 @@
           <li>Operations & Logistics</li>
           <li>Corporate Leadership Roles</li>
       </ul>
-      <p class="test-color-dark fs-5">Top employers include multinational corporations, consulting firms, financial institutions, and tech startups.</p>
+      <p class="test-color-dark fs-6">Top employers include multinational corporations, consulting firms, financial institutions, and tech startups.</p>
 
       <hr class="my-5" />
 
@@ -133,7 +133,7 @@
       <hr class="my-5" />
 
       <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>
         Completion of 12 years of formal education (high school certificate or equivalent)
 
@@ -151,7 +151,7 @@
       </ul>
 
       <h5 class="text-primary fs-4">For Master’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Bachelor’s degree in a relevant life sciences or health field</li>
         <li>GPA: 3.0 out of 4.0 (or equivalent)</li>
         <li>

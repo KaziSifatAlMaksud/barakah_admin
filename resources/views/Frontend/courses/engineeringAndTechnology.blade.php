@@ -52,7 +52,7 @@
         <hr class="my-5">
          <!-- Introduction -->
         <h3 class="text-primary fs-4">Introduction</h3>
-        <p class="test-color-dark fs-5">
+        <p class="test-color-dark fs-6">
           Build the Future with Innovation and Engineering Excellence. <br />
           Engineering & Technology programs are ideal for students who want to
           design, build, and innovate solutions for the modern world. From
@@ -80,7 +80,7 @@
 
         <!-- Popular Programs -->
         <h3 class="text-primary fs-4">Popular Programs</h3>
-        <ul class="test-color-dark fs-5">
+        <ul class="test-color-dark fs-6">
           <li>Civil Engineering</li>
           <li>Mechanical Engineering</li>
           <li>Electrical & Electronics Engineering</li>
@@ -97,8 +97,8 @@
 
         <!-- Career Pathways -->
         <h3 class="text-primary fs-4">Career Pathways</h3>
-        <p class="test-color-dark fs-5">Graduates of Engineering & Technology programs can work in:</p>
-        <ul class="test-color-dark fs-5">
+        <p class="test-color-dark fs-6">Graduates of Engineering & Technology programs can work in:</p>
+        <ul class="test-color-dark fs-6">
           <li>Construction & Infrastructure</li>
           <li>Automotive & Manufacturing Industries</li>
           <li>Energy & Environmental Sectors</li>
@@ -107,7 +107,7 @@
           <li>Artificial Intelligence & Data Analytics</li>
           <li>Aerospace & Defense</li>
         </ul>
-        <p class="test-color-dark fs-5">
+        <p class="test-color-dark fs-6">
           Many engineers also progress into project management, consultancy, and
           innovation roles.
         </p>
@@ -120,7 +120,7 @@
         <hr class="my-5" />
 
         <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
-        <ul class="test-color-dark fs-5">
+        <ul class="test-color-dark fs-6">
           <li>
             Completion of 12 years of formal education with strong performance in
             Mathematics and Science
@@ -138,7 +138,7 @@
         </ul>
 
         <h5 class="text-primary fs-4">For Master’s Programs:</h5>
-        <ul class="test-color-dark fs-5">
+        <ul class="test-color-dark fs-6">
           <li>
             Bachelor’s degree in a relevant engineering or science discipline
           </li>

@@ -73,7 +73,7 @@
 
          <!-- Introduction -->
       <h3 class="text-primary fs-4">Introduction</h3>
-      <p class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">
         Explore Human Culture, Creativity, and Society. <br />
         Arts, Humanities & Social Sciences provide a deep understanding of human
         experience, culture, communication, and global issues. These programs
@@ -100,7 +100,7 @@
 
       <!-- Popular Programs -->
       <h3 class="text-primary fs-4">Popular Programs</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Media & Communication</li>
         <li>Psychology</li>
         <li>Sociology</li>
@@ -117,8 +117,8 @@
 
       <!-- Career Pathways -->
       <h3 class="text-primary fs-4">Career Pathways</h3>
-      <p class="test-color-dark fs-5">Graduates can pursue careers in:</p>
-      <ul class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">Graduates can pursue careers in:</p>
+      <ul class="test-color-dark fs-6">
         <li>Journalism & Broadcasting</li>
         <li>NGOs & Development Work</li>
         <li>Education & Academia</li>
@@ -127,7 +127,7 @@
         <li>Community Services</li>
         <li>Cultural Research & Advocacy</li>
       </ul>
-      <p class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">
         These fields equip students with transferable skills such as analytical
         thinking, writing, speaking, and cultural awareness — useful in both
         public and private sectors.
@@ -139,7 +139,7 @@
       <h3 >Entry Requirements</h3>
            <hr class="my-5" /> 
       <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>
           High school certificate (preferably with humanities/social science
           background)
@@ -157,7 +157,7 @@
       </ul>
 
       <h5 class="text-primary fs-4">For Master’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Bachelor’s degree in a relevant field</li>
         <li>GPA: 3.0 out of 4.0</li>
         <li>

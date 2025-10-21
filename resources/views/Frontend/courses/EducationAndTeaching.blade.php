@@ -74,7 +74,7 @@
 
       <!-- Introduction -->
       <h3 class="text-primary fs-4">Introduction</h3>
-      <p class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">
         Inspire Minds and Lead the Future of Learning
         <br />
         Education & Teaching programs are designed for those passionate about
@@ -101,7 +101,7 @@
 
       <!-- Popular Programs -->
       <h3 class="text-primary fs-4">Popular Programs</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Early Childhood Education</li>
         <li>Primary & Secondary Teaching</li>
         <li>TESOL / ESL (Teaching English to Speakers of Other Languages)</li>
@@ -117,8 +117,8 @@
 
       <!-- Career Pathways -->
       <h3 class="text-primary fs-4">Career Pathways</h3>
-      <p class="test-color-dark fs-5">Graduates of Education & Teaching programs may work in:</p>
-      <ul class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">Graduates of Education & Teaching programs may work in:</p>
+      <ul class="test-color-dark fs-6">
         <li>Public or Private Schools (Local or International)</li>
         <li>Early Childhood Centers</li>
         <li>Language Institutes</li>
@@ -136,7 +136,7 @@
       <hr class="my-5">
 
       <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>High school certificate</li>
         <li>GPA: 2.5 to 3.0 out of 4.0</li>
         <li>
@@ -151,7 +151,7 @@
       </ul>
 
       <h5 class="text-primary fs-4">For Master’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Bachelor’s degree in education or a related field</li>
         <li>GPA: 3.0 out of 4.0</li>
         <li>

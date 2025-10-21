@@ -100,7 +100,7 @@
 
       <!-- Popular Programs -->
       <h3 class="text-primary fs-4">Popular Programs</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Environmental Science</li>
         <li>Physics</li>
         <li>Chemistry</li>
@@ -117,8 +117,8 @@
 
       <!-- Career Pathways -->
       <h3 class="text-primary fs-4">Career Pathways</h3>
-      <p class="test-color-dark fs-5">Graduates of Science & Environment degrees may pursue careers in:</p>
-      <ul class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">Graduates of Science & Environment degrees may pursue careers in:</p>
+      <ul class="test-color-dark fs-6">
         <li>Environmental Consultancy</li>
         <li>Research & Academia</li>
         <li>Renewable Energy Sector</li>
@@ -134,8 +134,8 @@
       <!-- Entry Requirements -->
       <h3 class="text-primary fs-4">Entry Requirements</h3>
 
-      <h5 class="test-color-dark fs-5">For Bachelor’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <h5 class="test-color-dark fs-6">For Bachelor’s Programs:</h5>
+      <ul class="test-color-dark fs-6">
         <li>
           High school diploma with strong grades in Science (Physics, Chemistry,
           Biology, or Math)
@@ -153,7 +153,7 @@
       </ul>
 
       <h5 class="text-primary fs-4">For Master’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li >
           Bachelor’s degree in a science, environmental, or engineering-related
           field

@@ -73,7 +73,7 @@
       <hr class="my-5" />
       <!-- Introduction -->
       <h3 class="text-primary fs-4">Introduction</h3>
-      <p class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">
         Uphold Justice and Understand Criminal Behavior
         <br />
         Law & Criminology programs offer in-depth knowledge of legal systems,
@@ -99,7 +99,7 @@
 
       <!-- Popular Programs -->
       <h3 class="text-primary fs-4">Popular Programs</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>LLB (Bachelor of Laws)</li>
         <li>LLM (Master of Laws)</li>
         <li>Criminology & Criminal Justice</li>
@@ -116,8 +116,8 @@
 
       <!-- Career Pathways -->
       <h3 class="text-primary fs-4">Career Pathways</h3>
-      <p class="test-color-dark fs-5">Graduates in Law & Criminology can pursue roles in:</p>
-      <ul class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">Graduates in Law & Criminology can pursue roles in:</p>
+      <ul class="test-color-dark fs-6">
         <li>Legal Practice (Solicitor/Barrister)</li>
         <li>Police & Criminal Investigations</li>
         <li>Forensics & Crime Scene Analysis</li>
@@ -136,7 +136,7 @@
       <hr class="my-5" />
 
       <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>
           High school certificate (with humanities or law-related subjects
           preferred)
@@ -154,7 +154,7 @@
       </ul>
 
       <h5 class="text-primary fs-4">For Master’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Bachelor’s degree in law, social sciences, or related field</li>
         <li>GPA: 3.0 out of 4.0</li>
         <li>

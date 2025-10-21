@@ -53,7 +53,7 @@
 
       <div class="content">
           <h2 class="text-primary fs-4" >What We Offer</h2>
-          <ol  class="test-color-dark fs-5">
+          <ol  class="test-color-dark fs-6">
               <li><b>Pre-Departure Services</b>
                   <ul>
                       <li>Comprehensive travel briefing covering country-specific customs, academic expectations, and lifestyle tips</li>
@@ -75,11 +75,11 @@
               </li>
           </ol>
 
-          <p  class="test-color-dark fs-5">With BSAT by your side, you’re never alone — from take-off to touchdown and beyond.</p>
+          <p  class="test-color-dark fs-6">With BSAT by your side, you’re never alone — from take-off to touchdown and beyond.</p>
       </div>
 
       <h3 class="text-primary fs-4">Why BSAT?</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
           <li>End-to-end support before and after you fly</li>
           <li>Personalized transition help for both students and families</li>
           <li>Decade of experience in international student support</li>

@@ -73,7 +73,7 @@
       <hr class="my-5" />
       <!-- Introduction -->
       <h3 class="text-primary fs-4">Introduction</h3>
-      <p class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">
         Shape Experiences and Drive Global Hospitality
         <br />
         The Hospitality & Tourism industry is one of the fastest-growing sectors
@@ -99,7 +99,7 @@
 
       <!-- Popular Programs -->
       <h3 class="text-primary fs-4">Popular Programs</h3>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>Hotel & Hospitality Management</li>
         <li>Tourism & Travel Management</li>
         <li>Event Management</li>
@@ -116,8 +116,8 @@
 
       <!-- Career Pathways -->
       <h3 class="text-primary fs-4">Career Pathways</h3>
-      <p class="test-color-dark fs-5">Graduates in Hospitality & Tourism can pursue roles in:</p>
-      <ul class="test-color-dark fs-5">
+      <p class="test-color-dark fs-6">Graduates in Hospitality & Tourism can pursue roles in:</p>
+      <ul class="test-color-dark fs-6">
         <li>Hotel Operations & General Management</li>
         <li>Travel Agencies & Tour Operations</li>
         <li>Event Planning & Conference Services</li>
@@ -136,7 +136,7 @@
       <hr class="my-5" />
 
       <h5 class="text-primary fs-4">For Bachelor’s Programs:</h5>
-      <ul class="test-color-dark fs-5">
+      <ul class="test-color-dark fs-6">
         <li>High school certificate (any stream accepted)</li>
         <li>GPA: 2.5 to 3.0 out of 4.0</li>
         <li>

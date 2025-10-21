@@ -25,7 +25,7 @@
         <!-- Modal Search End -->
           <article class="container my-5">
               <h2 class="mb-4">Air Ticketing – Flight Booking Request Form</h2>
-              <p class="test-color-dark fs-5">
+              <p class="test-color-dark fs-6">
                 <strong>Flight Booking Made Easy with BSAT</strong><br>
                 At BSAT, we take the stress out of international travel planning. Our air ticketing service is tailored specifically for students, offering discounted fares, personalized route planning, and expert support throughout the booking process.
               <br/>

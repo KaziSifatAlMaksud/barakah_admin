@@ -64,9 +64,9 @@
                 
                 <div class="content">
                     <h4 class="text-primary fs-4">What We Offer</h4>
-                  <p class="test-color-dark fs-5">
+                  <p class="test-color-dark fs-6">
                   
-                    <ol class="test-color-dark fs-5">
+                    <ol class="test-color-dark fs-6">
                         <li><b>Personalized Counseling</b>
                             <p>Fill out our free consultation form. We'll evaluate your academic background, career goals, and financial preferences to recommend the best-fit universities.</p>
                         </li>
@@ -98,12 +98,12 @@
                         </li>
                         <li>Offer & Conditional Offer Assistance</li>
                     </ol>
-                   <p class="test-color-dark fs-5"> We follow up with universities to secure conditional or unconditional offer letters quickly—so you can move ahead with visa processing without delay. </p>
+                   <p class="test-color-dark fs-6"> We follow up with universities to secure conditional or unconditional offer letters quickly—so you can move ahead with visa processing without delay. </p>
 
                   </p>
                 </div>
                 <h3 class="text-primary fs-4">Why Choose BSAT?</h3>
-                <ul class="test-color-dark fs-5">
+                <ul class="test-color-dark fs-6">
                     <li>Proven Admission Expertise – Based on PFEC’s model in Bangladesh</li>
                     <li>Free, No-Obligation Consult that opens doors to unlimited university options</li>
                     <li>Dedicated Follow-up until you receive your offer letter</li>
