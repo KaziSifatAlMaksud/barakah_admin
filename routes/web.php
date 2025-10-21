@@ -18,20 +18,27 @@ use App\Http\Controllers\UserController;
 //     return view('welcome');
 // });
 
-Route::get('/dashboard', function () {
-    return view('Admin.pages.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    
+    // Employee Dashboard
+    Route::get('/dashboard', [EmployeeController::class, 'dashboard'])->name('dashboard');
+
+   
+
+});
 
 
 
 // Employee routes
 Route::middleware(['auth', 'is_employee'])->prefix('employee')->group(function () {
-    Route::get('/dashboard', [EmployeeController::class, 'dashboard'])->name('employee.dashboard');
+    
 });
 
 
 
 Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
+     Route::get('/dashboard', [EmployeeController::class, 'dashboard'])->name('employee.dashboard');
    
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

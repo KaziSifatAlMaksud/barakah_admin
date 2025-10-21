@@ -269,7 +269,7 @@
                   </p>
                   <a
                     class="btn btn-primary rounded-pill py-2 px-4"
-                    href="services/01.service-admission_support.html"
+                    href="{{ route('services.admission_support') }}"
                     >Read More</a
                   >
                 </div>
@@ -303,7 +303,7 @@
                   </p>
                   <a
                     class="btn btn-primary rounded-pill py-2 px-4"
-                    href="services/02.service-visa_assistance.html"
+                    href="{{ route('services.visa_assistance') }}"
                     >Read More</a
                   >
                 </div>
@@ -337,7 +337,7 @@
                   </p>
                   <a
                     class="btn btn-primary rounded-pill py-2 px-4"
-                    href="services/05.service_scholarships.html"
+                    href="{{ route('services.scholarships') }}"
                     >Read More</a
                   >
                 </div>
@@ -369,7 +369,7 @@
                   </p>
                   <a
                     class="btn btn-primary rounded-pill py-2 px-4"
-                    href="services/08.service_air_tickering.html"
+                    href="{{ route('services.travel_support') }}"
                     >Read More</a
                   >
                 </div>
@@ -716,12 +716,9 @@
           style="max-width: 800px"
         >
           <h4 class="text-primary">Testimonial</h4>
-          <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
+          <h1 class="display-4 mb-4">Where Our Clients’ Dreams Turn Into Success</h1>
           <p class="mb-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            adipisci facilis cupiditate recusandae aperiam temporibus corporis
-            itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
-            obcaecati, ipsam mollitia hic.
+            We take pride in transforming challenges into opportunities. Our success stories showcase how our strategic thinking, creative approach, and technical excellence have helped businesses achieve remarkable results. Together, we’re building a future driven by innovation, trust, and long-term partnerships.
           </p>
         </div>
         <div
@@ -818,171 +815,7 @@
           </div>
         @endforeach
         @endif
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0" style="height: 350px">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="{{ asset('assets/img/story/saad.png') }}"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div
-                  class="d-flex flex-column my-auto text-start p-4"
-                  style="max-width: 400px"
-                >
-                  <h4 class="text-dark mb-1">Saad Imran</h4>
-                  <p class="text-muted mb-3">Profession</p>
-
-                  <p class="mb-2">
-                    <i
-                      class="fas fa-graduation-cap"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    Master’s in Data Science
-                  </p>
-
-                  <p class="mb-2">
-                    <i
-                      class="fas fa-university"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    University of Denver, Colorado
-                  </p>
-
-                  <p class="mb-2">
-                    <i
-                      class="fas fa-chart-line"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    CGPA: 3.9
-                  </p>
-
-                  <p class="mb-2">
-                    <i
-                      class="fas fa-users"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    F2 Visa Approved for Spouse (Kazi Nusrat Jahan Prionty)
-                  </p>
-
-                  <p class="mb-0">
-                  
-                    United States
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0" style="height: 350px">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="{{ asset('assets/img/story/tuhin.png') }}"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Tuhin Mahmud</h4>
-                  <p class="mb-3">Success Story #3</p>
-                  <div
-                    style="
-                      font-family: Arial, sans-serif;
-                      line-height: 1.6;
-                      padding: 20px;
-                    "
-                  >
-                    <p>
-                      <i
-                        class="fas fa-university"
-                        style="color: #007bff; margin-right: 8px"
-                      ></i>
-                      Fine Arts (Spouse)
-                    </p>
-                    <p>
-                      <i
-                        class="fas fa-users"
-                        style="color: #007bff; margin-right: 8px"
-                      ></i>
-                      Joint Application Strategy
-                    </p>
-                    <p>
-                      <i
-                        class="fas fa-plane"
-                        style="color: #007bff; margin-right: 8px"
-                      ></i>
-                      United States
-                    </p>
-                    <p>
-                      <i
-                        class="fas fa-map-marker-alt"
-                        style="color: #007bff; margin-right: 8px"
-                      ></i>
-                      Successfully Relocated with Spouse
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0" style="height: 350px">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="{{ asset('assets/img/story/Mariom.png') }}"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Tuhin Mahmud</h4>
-                  <p class="mb-3">Success Story #3</p>
-
-                  <p>
-                    <i
-                      class="fas fa-graduation-cap"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    Fine Arts (Spouse)
-                  </p>
-                  <p>
-                    <i
-                      class="fas fa-users"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    Joint Application Strategy
-                  </p>
-                  <p>
-                    <i
-                      class="fas fa-plane-departure"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    United States
-                  </p>
-                  <p>
-                    <i
-                      class="fas fa-map-marker-alt"
-                      style="color: #007bff; margin-right: 8px"
-                    ></i>
-                    Successfully Relocated with Spouse
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
@@ -1012,7 +845,7 @@
               <p class="text-dark mb-4">
                 <i class="fa fa-check text-primary me-3"></i>24/7 fast Support
               </p>
-              <a class="btn btn-primary rounded-pill py-3 px-5" href="index.html"
+              <a class="btn btn-primary rounded-pill py-3 px-5" href="{{ route('about') }}"
                 >More Information</a
               >
             </div>

@@ -163,42 +163,46 @@
 
             {{-- card start here  --}}
 
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <i class="ti ti-layout"></i>
-                  </span>
-                  <span class="hide-menu">User</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between"  
-                    href="{{ route('admin.users.index') }}">
-                    <div class="d-flex align-items-center gap-3">
-                      <div class="round-16 d-flex align-items-center justify-content-center">
-                        <i class="ti ti-circle"></i>
+            @if(auth()->user()->role == 'admin')
+
+              <li class="sidebar-item">
+                <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="d-flex">
+                      <i class="ti ti-layout"></i>
+                    </span>
+                    <span class="hide-menu">User</span>
+                  </div>
+                  
+                </a>
+                <ul aria-expanded="false" class="collapse first-level">
+                  <li class="sidebar-item">
+                    <a class="sidebar-link justify-content-between"  
+                      href="{{ route('admin.users.index') }}">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="round-16 d-flex align-items-center justify-content-center">
+                          <i class="ti ti-circle"></i>
+                        </div>
+                        <span class="hide-menu">All Users</span>
                       </div>
-                      <span class="hide-menu">All Users</span>
-                    </div>
-                    
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between"  
-                    href="{{ route('admin.users.create') }}">
-                    <div class="d-flex align-items-center gap-3">
-                      <div class="round-16 d-flex align-items-center justify-content-center">
-                        <i class="ti ti-circle"></i>
+                      
+                    </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a class="sidebar-link justify-content-between"  
+                      href="{{ route('admin.users.create') }}">
+                      <div class="d-flex align-items-center gap-3">
+                        <div class="round-16 d-flex align-items-center justify-content-center">
+                          <i class="ti ti-circle"></i>
+                        </div>
+                        <span class="hide-menu">Create Users</span>
                       </div>
-                      <span class="hide-menu">Create Users</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+            @endif
 
             {{-- card end here  --}}
               <li class="nav-small-cap">
@@ -265,60 +269,11 @@
                 </div>
                 
               </a>
-            </li>
-        
-          
-           
-           
-            
-         
-            
-
+            </li>            
             <li>
               <span class="sidebar-divider lg"></span>
             </li>
-          
-           
-          
-           
-           
-            
-            
 
-         
-
-
-         
-            
-
-
-
-           
-           
-
-           
-          
-            
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between"  
-                href="#"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <i class="ti ti-settings"></i>
-                  </span>
-                  <span class="hide-menu">Maintenance</span>
-                </div>
-                
-              </a>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-          
-          
-           
           </ul>
         </nav>
         <!-- End Sidebar navigation -->

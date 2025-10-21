@@ -18,7 +18,7 @@ class ApplicationController extends Controller
     public function show($id)
     {
         $application = Application::findOrFail($id);
-        return view('admin.applications.show', compact('application'));
+        return view('Admin.pages.application_show', compact('application'));
     }
 
     // Delete application
