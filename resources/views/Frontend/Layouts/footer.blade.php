@@ -78,8 +78,7 @@
                         <div>
                           <h4 class="text-white">Address</h4>
                           <p class="mb-0">
-                            Flat #3A, House #13, Road #13A, Dhanmondi, Dhaka
-                            1209, Bangladesh
+                            WINS COURT, House 8, Road 14, Dhanmondi, Dhaka-1209 (Lift Level 5), Bangladesh
                           </p>
                         </div>
                       </div>

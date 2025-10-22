@@ -142,35 +142,37 @@
                     <!-- Last Education Level -->
                     <div class="col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <input type="text" class="form-control border-0" id="last_edu" name="last_edu" placeholder="Last Education Level">
-                        <label for="last_edu">Last Education Level</label>
+                        <input type="text" class="form-control border-0" id="last_edu" name="last_edu" placeholder="HSC / A-Level / Diploma / Bachelor’s / Master’s">
+                        <label for="last_edu">Highest Qualification</label>
                       </div>
                     </div>
 
                     <!-- CGPA -->
                     <div class="col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <input type="number" step="0.01" class="form-control border-0" id="cgpa" name="cgpa" placeholder="Your CGPA">
+                        <input type="number" step="0.01" class="form-control border-0" id="cgpa" name="cgpa" placeholder="e.g. 3.75 ">
                         <label for="cgpa">Your CGPA</label>
                       </div>
                     </div>
 
+                     <!-- Subject of Study -->
+                    <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control border-0" id="subject_study" name="subject_study" required placeholder="e.g., Business, Science, Engineering, Arts">
+                        <label for="subject_study">Your Field of Study/ Major</label>
+                      </div>
+                    </div>
+
+
                     <!-- Education Year -->
                     <div class="col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <input type="number" min="1900" max="2099" class="form-control border-0" id="edu_year" name="edu_year" placeholder="Year of Education Complete">
+                        <input type="number" min="1900" max="2099" class="form-control border-0" id="edu_year" name="edu_year" placeholder="2022">
                         <label for="edu_year">Year of Education Complete</label>
                       </div>
                     </div>
 
-                    <!-- Subject of Study -->
-                    <div class="col-lg-12 col-xl-6">
-                      <div class="form-floating">
-                        <input type="text" class="form-control border-0" id="subject_study" name="subject_study" placeholder="Your Subject of Study">
-                        <label for="subject_study">Your Subject of Study</label>
-                      </div>
-                    </div>
-
+                   
                     <!-- Degree You Want to Pursue -->
                     <div class="col-lg-12 col-xl-6">
                       <div class="form-floating">
@@ -204,8 +206,8 @@
                     <!-- Preferable University -->
                     <div class="col-12">
                       <div class="form-floating">
-                        <input type="text" class="form-control border-0" id="preferable_un" name="preferable_un" placeholder="Your Preferable University">
-                        <label for="preferable_un">Your Preferable University</label>
+                        <input type="text" class="form-control border-0" id="preferable_un" name="preferable_un" placeholder="Your Preferable Destination">
+                        <label for="preferable_un">Your Preferable Destination</label>
                       </div>
                     </div>
 
