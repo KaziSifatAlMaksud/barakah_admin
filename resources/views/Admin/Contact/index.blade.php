@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const button = event.relatedTarget;
     const contactId = button.getAttribute('data-id');
     const form = document.getElementById('deleteForm');
-    form.action = "{{ url('admin/contact_us') }}/" + contactId;
+    form.action = "{{ url('/contact_us') }}/" + contactId;
   });
 });
 </script>

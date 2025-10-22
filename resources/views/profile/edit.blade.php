@@ -25,7 +25,7 @@
             <div class="d-flex align-items-center flex-column flex-md-row gap-3">
               <div class="image-preview-wrapper text-center">
                 <img id="profilePreview" 
-                     src="{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('Admin/assets/images/no-image.png') }}" 
+                     src="{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('assets/images/no-image.png') }}" 
                      alt="Profile" 
                      class="rounded-circle border shadow-sm" 
                      style="width: 140px; height: 140px; object-fit: cover;">
@@ -104,7 +104,7 @@
   const profilePreview = document.getElementById('profilePreview');
   const removeProfileBtn = document.getElementById('removeProfileBtn');
   const resetProfileBtn = document.getElementById('resetProfileBtn');
-  const defaultProfile = "{{ asset('Admin/assets/images/no-image.png') }}";
+  const defaultProfile = "{{ asset('assets/images/no-image.png') }}";
   const currentProfile = "{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('Admin/assets/images/no-image.png') }}";
 
   profileInput.addEventListener('change', (e) => {

@@ -24,22 +24,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Employee Dashboard
     Route::get('/dashboard', [EmployeeController::class, 'dashboard'])->name('dashboard');
 
-   
-
-});
-
-
-
-// Employee routes
-Route::middleware(['auth', 'is_employee'])->prefix('employee')->group(function () {
-    
-});
-
-
-
-Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
-     Route::get('/dashboard', [EmployeeController::class, 'dashboard'])->name('employee.dashboard');
-   
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -53,7 +37,7 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
     Route::get('/applications/{id}', [ApplicationController::class, 'show'])->name('admin.application.show');
     Route::delete('/applications/{id}', [ApplicationController::class, 'destroy'])->name('admin.application.delete');
 
-    Route::get('/country', [DestinationController::class, 'view_country'])->name('admin.country.index');
+     Route::get('/country', [DestinationController::class, 'view_country'])->name('admin.country.index');
     Route::post('/country', [DestinationController::class, 'country_store'])->name('admin.country.store');
     Route::get('/country/{id}', [DestinationController::class, 'show'])->name('admin.country.show');
     Route::delete('/country/{id}', [DestinationController::class, 'destroy'])->name('admin.country.destroy');
@@ -84,6 +68,19 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
     Route::delete('/banners/{id}', [BannerController::class, 'destroy'])->name('admin.banners.destroy');
 
 
+});
+
+
+
+// Employee routes
+Route::middleware(['auth', 'is_employee'])->prefix('employee')->group(function () {
+    
+});
+
+
+
+Route::middleware(['auth', 'is_admin'])->prefix('admin')->group(function () {
+       
         // create user routes
         Route::get('/users', [UserController::class, 'index'])->name('admin.users.index');
         Route::get('/users/create', [UserController::class, 'create'])->name('admin.users.create');

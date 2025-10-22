@@ -33,7 +33,7 @@
                   style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
                     
                     <!-- Profile Image -->
-                    <img src="{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('Admin/assets/images/no-image.png') }}" 
+                    <img src="{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('assets/images/no-image.png') }}" 
                         alt="Profile" 
                         width="35" 
                         height="35" 
@@ -50,18 +50,14 @@
 
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
-                    <a href="{{ url('admin/profile') }}" class="d-flex align-items-center gap-2 dropdown-item">
+                    <a href="{{ url('/profile') }}" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
                       <p class="mb-0 fs-3">My Profile</p>
                     </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                    {{-- <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-mail fs-6"></i>
                       <p class="mb-0 fs-3">My Account</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-list-check fs-6"></i>
-                      <p class="mb-0 fs-3">My Task</p>
-                    </a>
+                    </a> --}}
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-outline-primary mx-3 mt-2 d-block">
