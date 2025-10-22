@@ -14,6 +14,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UniversityController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -66,6 +67,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::put('/banners/{id}', [BannerController::class, 'update'])->name('admin.banners.update');
     Route::post('/banners', [BannerController::class, 'store'])->name('admin.banners.store');
     Route::delete('/banners/{id}', [BannerController::class, 'destroy'])->name('admin.banners.destroy');
+
+    Route::get('/university', [UniversityController::class, 'index'])->name('admin.university.index');
+    Route::post('/university', [UniversityController::class, 'store'])->name('admin.university.store');
+    Route::get('/university/{id}', [UniversityController::class, 'show'])->name('admin.university.show');
+    Route::delete('/university/{id}', [UniversityController::class, 'destroy'])->name('admin.university.destroy');
+
+
 
 
 });

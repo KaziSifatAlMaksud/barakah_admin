@@ -32,9 +32,9 @@ class AuthenticatedSessionController extends Controller
         $user = Auth::user();
 
         if ($user->role === 'admin') {
-            return redirect()->route('admin.dashboard');
+            return redirect()->route('dashboard');
         } elseif ($user->role === 'employee') {
-            return redirect()->route('employee.dashboard');
+            return redirect()->route('dashboard');
         }
 
         // Default fallback

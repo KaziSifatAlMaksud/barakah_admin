@@ -31,6 +31,10 @@
           @endphp
 
            @foreach ($cards as $card)
+
+              @if(auth()->user()->role === 'employee' && $card['title'] === 'Users')
+                @continue
+            @endif
           
               <div class="col-12 col-md-6 col-lg-4">
                  <a href="{{ route($card['url']) }}">
